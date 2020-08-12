@@ -1,5 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
+Imports System.Configuration
+
 
 Public Class F_Estudiantes
     Dim cadena As New OleDbConnection
@@ -27,10 +29,10 @@ Public Class F_Estudiantes
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Wagner\Downloads\Cal.ProyectosDeGraduación.accdb"
+            cadena.ConnectionString = ConfigurationManager.ConnectionStrings.Item(1).ConnectionString
             cadena.Open()
 
-            comando = New OleDbCommand("Insert into paciente(Nombre, Carné, NombredelProyecto, ProfesorAsesor)" & "values(NombreTextBox, CarnéTextBox, NombredelProyectoTextBox, ProfesorAsesorComboBox)", cadena)
+            comando = New OleDbCommand("Insert into Estudiantes(Nombre, Carné, NombredelProyecto, ProfesorAsesor)" & "values(NombreTextBox, CarnéTextBox, NombredelProyectoTextBox, ProfesorAsesorComboBox)", cadena)
 
             comando.Parameters.AddWithValue("@Nombre", NombreTextBox.Text)
             comando.Parameters.AddWithValue("@Carné", CarnéTextBox.Text)
