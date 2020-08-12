@@ -74,12 +74,6 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BORRAR.Designer.vb">
-      <DependentUpon>BORRAR.vb</DependentUpon>
-    </Compile>
-    <Compile Include="BORRAR.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="F Estudiantes.Designer.vb">
       <DependentUpon>F Estudiantes.vb</DependentUpon>
     </Compile>
@@ -133,9 +127,6 @@
     </Compile>
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="BORRAR.resx">
-      <DependentUpon>BORRAR.vb</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="F Estudiantes.resx">
       <DependentUpon>F Estudiantes.vb</DependentUpon>
     </EmbeddedResource>
