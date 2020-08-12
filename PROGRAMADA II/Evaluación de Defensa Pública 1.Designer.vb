@@ -673,7 +673,7 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(468, 655)
+        Me.Button2.Location = New System.Drawing.Point(482, 655)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(145, 46)
         Me.Button2.TabIndex = 56
