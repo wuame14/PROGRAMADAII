@@ -16,7 +16,6 @@ Public Class Form1
         Catch ex As Exception
             MsgBox("No se pudo conectar con la cálculadora", vbCritical, "Aviso")
         End Try
-        'adsfasfasfsafdsaf
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
