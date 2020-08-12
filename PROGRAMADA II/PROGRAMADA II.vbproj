@@ -172,5 +172,10 @@
       <DependentUpon>_Cal_ProyectosDeGraduaciónDataSet.xsd</DependentUpon>
     </None>
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Cal.ProyectosDeGraduación.mdb">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
