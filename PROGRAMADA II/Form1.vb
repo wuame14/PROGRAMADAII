@@ -1,5 +1,6 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
+Imports System.Configuration
 
 
 Public Class Form1
@@ -8,7 +9,7 @@ Public Class Form1
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Wagner\Downloads\Cal.ProyectosDeGraduación.accdb"
+            cadena.ConnectionString = ConfigurationManager.ConnectionStrings.Item(1).ConnectionString
             cadena.Open()
             'Mostrar()
             MsgBox("Usted ha entrado a la aplicación 'cálculadora de notas de graduación'", vbInformation, "Aviso")
