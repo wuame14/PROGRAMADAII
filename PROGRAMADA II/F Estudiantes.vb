@@ -1,5 +1,7 @@
 ﻿Imports System.Data
 Imports System.Data.OleDb
+Imports System.Configuration
+
 
 Public Class F_Estudiantes
     Dim cadena As New OleDbConnection
@@ -8,7 +10,8 @@ Public Class F_Estudiantes
         Me.Validate()
         Me.EstudiantesBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me._Cal_ProyectosDeGraduaciónDataSet)
-
+        Me.Refresh()
+        Tabla_Est.Refresh()
     End Sub
 
     Private Sub F_Estudiantes_Load(sender As Object, e As EventArgs) Handles MyBase.Load
@@ -26,26 +29,28 @@ Public Class F_Estudiantes
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Try
-            cadena.ConnectionString = "Provider=Microsoft.ACE.OLEDB.12.0;Data Source=C:\Users\Wagner\Downloads\Cal.ProyectosDeGraduación.accdb"
-            cadena.Open()
+        Me.Validate()
+        Me.EstudiantesBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me._Cal_ProyectosDeGraduaciónDataSet)
+        Me.Refresh()
+        Tabla_Est.Refresh()
+    End Sub
 
-            comando = New OleDbCommand("Insert into paciente(Nombre, Carné, NombredelProyecto, ProfesorAsesor)" & "values(NombreTextBox, CarnéTextBox, NombredelProyectoTextBox, ProfesorAsesorComboBox)", cadena)
+    Private Sub BindingNavigatorAddNewItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorAddNewItem.Click
 
-            comando.Parameters.AddWithValue("@Nombre", NombreTextBox.Text)
-            comando.Parameters.AddWithValue("@Carné", CarnéTextBox.Text)
-            comando.Parameters.AddWithValue("@NombredelProyecto", Nombre_del_ProyectoTextBox.Text)
-            comando.Parameters.AddWithValue("@ProfesorAsesor", Profesor_AsesorComboBox.SelectedItem)
-            comando.ExecuteNonQuery()
+    End Sub
 
-            MsgBox("Registro Guardado Correctamente", vbInformation, "Aviso")
+    Private Sub BindingNavigatorDeleteItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorDeleteItem.Click
+    End Sub
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.EstudiantesBindingSource.AddNew()
+    End Sub
 
-        Catch ex As Exception
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.EstudiantesBindingSource.MoveNext()
+    End Sub
 
-            MsgBox("Registro No se Guardo", vbCritical, "Aviso")
-
-        End Try
-
-        cadena.Close()
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.EstudiantesBindingSource.MovePrevious()
     End Sub
 End Class

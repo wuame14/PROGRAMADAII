@@ -1,4 +1,9 @@
-﻿Public Class F_Profesores
+﻿Imports System.Data
+Imports System.Data.OleDb
+Imports System.Configuration
+Public Class F_Profesores
+    Dim cadena As New OleDbConnection
+    Dim comando As New OleDbCommand
     Private Sub ProfesoresBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles ProfesoresBindingNavigatorSaveItem.Click
         Me.Validate()
         Me.ProfesoresBindingSource.EndEdit()
@@ -18,6 +23,18 @@
     End Sub
 
     Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
+
+    End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        Me.Validate()
+        Me.ProfesoresBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me._Cal_ProyectosDeGraduaciónDataSet)
+        Me.Refresh()
+        Tabla_Pro.Refresh()
+    End Sub
+
+    Private Sub BindingNavigatorAddNewItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorAddNewItem.Click
 
     End Sub
 End Class

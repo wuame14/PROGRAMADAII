@@ -48,6 +48,7 @@ Partial Class F_Estudiantes
         Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.EstudiantesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.NombreTextBox = New System.Windows.Forms.TextBox()
         Me.CarnéTextBox = New System.Windows.Forms.TextBox()
         Me.Nombre_del_ProyectoTextBox = New System.Windows.Forms.TextBox()
@@ -58,9 +59,11 @@ Partial Class F_Estudiantes
         Me.Lector_2TextBox = New System.Windows.Forms.TextBox()
         Me.Nota_Lector_2TextBox = New System.Windows.Forms.TextBox()
         Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
         Me.ProfesoresTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter()
-        Me.EstudiantesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Button5 = New System.Windows.Forms.Button()
+        Me.Button6 = New System.Windows.Forms.Button()
         NombreLabel = New System.Windows.Forms.Label()
         CarnéLabel = New System.Windows.Forms.Label()
         Nombre_del_ProyectoLabel = New System.Windows.Forms.Label()
@@ -272,6 +275,14 @@ Partial Class F_Estudiantes
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
         Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
         '
+        'EstudiantesBindingNavigatorSaveItem
+        '
+        Me.EstudiantesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.EstudiantesBindingNavigatorSaveItem.Image = CType(resources.GetObject("EstudiantesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.EstudiantesBindingNavigatorSaveItem.Name = "EstudiantesBindingNavigatorSaveItem"
+        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
+        Me.EstudiantesBindingNavigatorSaveItem.Text = "Guardar datos"
+        '
         'NombreTextBox
         '
         Me.NombreTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Nombre", True))
@@ -353,32 +364,54 @@ Partial Class F_Estudiantes
         Me.Button1.Text = "Regresar al Menú"
         Me.Button1.UseVisualStyleBackColor = True
         '
-        'Button2
-        '
-        Me.Button2.Location = New System.Drawing.Point(511, 143)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 18
-        Me.Button2.Text = "Guardar"
-        Me.Button2.UseVisualStyleBackColor = True
-        '
         'ProfesoresTableAdapter
         '
         Me.ProfesoresTableAdapter.ClearBeforeFill = True
         '
-        'EstudiantesBindingNavigatorSaveItem
+        'Button2
         '
-        Me.EstudiantesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
-        Me.EstudiantesBindingNavigatorSaveItem.Image = CType(resources.GetObject("EstudiantesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
-        Me.EstudiantesBindingNavigatorSaveItem.Name = "EstudiantesBindingNavigatorSaveItem"
-        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
-        Me.EstudiantesBindingNavigatorSaveItem.Text = "Guardar datos"
+        Me.Button2.Location = New System.Drawing.Point(455, 111)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(121, 23)
+        Me.Button2.TabIndex = 18
+        Me.Button2.Text = "Guardar datos"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(496, 213)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(113, 23)
+        Me.Button4.TabIndex = 20
+        Me.Button4.Text = "Nuevo Registro"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Button5
+        '
+        Me.Button5.Location = New System.Drawing.Point(496, 242)
+        Me.Button5.Name = "Button5"
+        Me.Button5.Size = New System.Drawing.Size(113, 23)
+        Me.Button5.TabIndex = 21
+        Me.Button5.Text = "Registro Siguiente"
+        Me.Button5.UseVisualStyleBackColor = True
+        '
+        'Button6
+        '
+        Me.Button6.Location = New System.Drawing.Point(496, 275)
+        Me.Button6.Name = "Button6"
+        Me.Button6.Size = New System.Drawing.Size(113, 23)
+        Me.Button6.TabIndex = 22
+        Me.Button6.Text = "Registro Anterior"
+        Me.Button6.UseVisualStyleBackColor = True
         '
         'F_Estudiantes
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button6)
+        Me.Controls.Add(Me.Button5)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(NombreLabel)
@@ -436,8 +469,11 @@ Partial Class F_Estudiantes
     Friend WithEvents Lector_2TextBox As TextBox
     Friend WithEvents Nota_Lector_2TextBox As TextBox
     Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
     Friend WithEvents ProfesoresBindingSource As BindingSource
     Friend WithEvents ProfesoresTableAdapter As _Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter
     Friend WithEvents EstudiantesBindingNavigatorSaveItem As ToolStripButton
+    Friend WithEvents Button2 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Button5 As Button
+    Friend WithEvents Button6 As Button
 End Class

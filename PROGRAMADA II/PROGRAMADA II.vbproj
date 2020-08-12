@@ -124,6 +124,7 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>_Cal_ProyectosDeGraduaciónDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -162,19 +163,22 @@
     <None Include="App.config" />
     <None Include="_Cal_ProyectosDeGraduaciónDataSet.xsc">
       <DependentUpon>_Cal_ProyectosDeGraduaciónDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="_Cal_ProyectosDeGraduaciónDataSet.xsd">
       <Generator>MSDataSetGenerator</Generator>
       <LastGenOutput>_Cal_ProyectosDeGraduaciónDataSet.Designer.vb</LastGenOutput>
       <SubType>Designer</SubType>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
     <None Include="_Cal_ProyectosDeGraduaciónDataSet.xss">
       <DependentUpon>_Cal_ProyectosDeGraduaciónDataSet.xsd</DependentUpon>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </None>
   </ItemGroup>
   <ItemGroup>
     <Content Include="Cal.ProyectosDeGraduación.mdb">
-      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
