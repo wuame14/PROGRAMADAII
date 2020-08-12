@@ -28,26 +28,26 @@ Public Class F_Estudiantes
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
-        Try
-            cadena.ConnectionString = ConfigurationManager.ConnectionStrings.Item(1).ConnectionString
-            cadena.Open()
+        Me.Validate()
+        Me.EstudiantesBindingSource.EndEdit()
+        Me.TableAdapterManager.UpdateAll(Me._Cal_ProyectosDeGraduaciónDataSet)
+        Me.Refresh()
+        Tabla_Est.Refresh()
+    End Sub
 
-            comando = New OleDbCommand("Insert into Estudiantes(Nombre, Carné, NombredelProyecto, ProfesorAsesor)" & "values(NombreTextBox, CarnéTextBox, NombredelProyectoTextBox, ProfesorAsesorComboBox)", cadena)
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.EstudiantesBindingSource.AddNew()
+    End Sub
 
-            comando.Parameters.AddWithValue("@Nombre", NombreTextBox.Text)
-            comando.Parameters.AddWithValue("@Carné", CarnéTextBox.Text)
-            comando.Parameters.AddWithValue("@NombredelProyecto", Nombre_del_ProyectoTextBox.Text)
-            comando.Parameters.AddWithValue("@ProfesorAsesor", Profesor_AsesorComboBox.SelectedItem)
-            comando.ExecuteNonQuery()
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.EstudiantesBindingSource.MoveNext()
+    End Sub
 
-            MsgBox("Registro Guardado Correctamente", vbInformation, "Aviso")
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.EstudiantesBindingSource.MovePrevious()
+    End Sub
 
-        Catch ex As Exception
+    Private Sub BindingNavigatorDeleteItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorDeleteItem.Click
 
-            MsgBox("Registro No se Guardo", vbCritical, "Aviso")
-
-        End Try
-
-        cadena.Close()
     End Sub
 End Class

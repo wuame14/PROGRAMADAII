@@ -388,7 +388,7 @@ Partial Class F_Estudiantes
         '
         'Button5
         '
-        Me.Button5.Location = New System.Drawing.Point(496, 242)
+        Me.Button5.Location = New System.Drawing.Point(496, 281)
         Me.Button5.Name = "Button5"
         Me.Button5.Size = New System.Drawing.Size(113, 23)
         Me.Button5.TabIndex = 21
@@ -397,7 +397,7 @@ Partial Class F_Estudiantes
         '
         'Button6
         '
-        Me.Button6.Location = New System.Drawing.Point(496, 275)
+        Me.Button6.Location = New System.Drawing.Point(496, 246)
         Me.Button6.Name = "Button6"
         Me.Button6.Size = New System.Drawing.Size(113, 23)
         Me.Button6.TabIndex = 22

@@ -37,4 +37,22 @@ Public Class F_Profesores
     Private Sub BindingNavigatorAddNewItem_Click(sender As Object, e As EventArgs) Handles BindingNavigatorAddNewItem.Click
 
     End Sub
+
+    Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
+        Me.ProfesoresBindingSource.AddNew()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Me.ProfesoresBindingSource.MovePrevious()
+    End Sub
+
+    Private Sub Button5_Click(sender As Object, e As EventArgs) Handles Button5.Click
+        Me.ProfesoresBindingSource.MoveNext()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        Me.ProfesoresBindingSource.RemoveCurrent()
+        ProfesoresTableAdapter.Update(_Cal_ProyectosDeGraduaciónDataSet)
+
+    End Sub
 End Class
