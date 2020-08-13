@@ -50,4 +50,9 @@ Public Class Form1
         Evaluación_de_Defensa_Pública_1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        C_Notas.Show()
+        Me.Hide()
+    End Sub
 End Class

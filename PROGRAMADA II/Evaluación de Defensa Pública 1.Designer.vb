@@ -96,6 +96,7 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.ProfesoresTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter()
         Me.NombreComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.Button3 = New System.Windows.Forms.Button()
         NombreLabel = New System.Windows.Forms.Label()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -164,8 +165,8 @@ Partial Class Evaluación_de_Defensa_Pública_1
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
-        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
@@ -204,6 +205,7 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
         Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -673,18 +675,28 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(468, 655)
+        Me.Button2.Location = New System.Drawing.Point(413, 655)
         Me.Button2.Name = "Button2"
         Me.Button2.Size = New System.Drawing.Size(145, 46)
         Me.Button2.TabIndex = 56
         Me.Button2.Text = "PDF"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'Button3
+        '
+        Me.Button3.Location = New System.Drawing.Point(602, 667)
+        Me.Button3.Name = "Button3"
+        Me.Button3.Size = New System.Drawing.Size(132, 23)
+        Me.Button3.TabIndex = 57
+        Me.Button3.Text = "Regresar al Menú"
+        Me.Button3.UseVisualStyleBackColor = True
+        '
         'Evaluación_de_Defensa_Pública_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(786, 729)
+        Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.NombreComboBox1)
         Me.Controls.Add(Me.TextBox23)
@@ -823,4 +835,5 @@ Partial Class Evaluación_de_Defensa_Pública_1
     Friend WithEvents ProfesoresTableAdapter As _Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter
     Friend WithEvents NombreComboBox1 As ComboBox
     Friend WithEvents Button2 As Button
+    Friend WithEvents Button3 As Button
 End Class
