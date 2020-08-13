@@ -21,7 +21,6 @@
         Me.EstudiantesBindingSource.EndEdit()
         Me.TableAdapterManager.UpdateAll(Me._Cal_ProyectosDeGraduaciónDataSet)
 
-        EstudiantesTableAdapter.Update()
     End Sub
 
     Private Sub Button1_Click(sender As Object, e As EventArgs) Handles Button1.Click
