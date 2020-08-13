@@ -42,12 +42,26 @@ Public Class Form1
         Me.Hide()
     End Sub
 
-    Private Sub Button5_Click(sender As Object, e As EventArgs)
-
-    End Sub
-
     Private Sub Button5_Click_1(sender As Object, e As EventArgs) Handles Button5.Click
         Evaluación_de_Defensa_Pública_1.Show()
         Me.Hide()
     End Sub
-End Class
+
+    Private Sub Button7_Click(sender As Object, e As EventArgs) Handles Button7.Click
+        C_Notas.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button8_Click(sender As Object, e As EventArgs) Handles Button8.Click
+        Acta_Defensa_Pública.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button6_Click(sender As Object, e As EventArgs) Handles Button6.Click
+        Evaluación_de_Defensa_Pública_2.Show()
+        Me.Hide()
+    End Sub
+
+    Private Sub Button9_Click(sender As Object, e As EventArgs) Handles Button9.Click
+        End
+    End Sub
