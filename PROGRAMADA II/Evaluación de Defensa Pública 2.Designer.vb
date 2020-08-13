@@ -22,7 +22,9 @@ Partial Class Evaluación_de_Defensa_Pública_2
     'Do not modify it using the code editor.
     <System.Diagnostics.DebuggerStepThrough()> _
     Private Sub InitializeComponent()
+        Me.components = New System.ComponentModel.Container()
         Dim NombreLabel As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Evaluación_de_Defensa_Pública_2))
         Me.TextBox19 = New System.Windows.Forms.TextBox()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
         Me.TextBox12 = New System.Windows.Forms.TextBox()
@@ -56,10 +58,8 @@ Partial Class Evaluación_de_Defensa_Pública_2
         Me.Label1 = New System.Windows.Forms.Label()
         Me.TextBox2 = New System.Windows.Forms.TextBox()
         Me.TextBox1 = New System.Windows.Forms.TextBox()
-        Me.NombreComboBox = New System.Windows.Forms.ComboBox()
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
-        Me.NombreComboBox1 = New System.Windows.Forms.ComboBox()
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.TextBox22 = New System.Windows.Forms.TextBox()
         Me.TextBox21 = New System.Windows.Forms.TextBox()
@@ -76,8 +76,44 @@ Partial Class Evaluación_de_Defensa_Pública_2
         Me.Label22 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
+        Me._Cal_ProyectosDeGraduaciónDataSet = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSet()
+        Me.EstudiantesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EstudiantesTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.EstudiantesTableAdapter()
+        Me.TableAdapterManager = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.TableAdapterManager()
+        Me.EstudiantesBindingNavigator = New System.Windows.Forms.BindingNavigator(Me.components)
+        Me.BindingNavigatorMoveFirstItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMovePreviousItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorPositionItem = New System.Windows.Forms.ToolStripTextBox()
+        Me.BindingNavigatorCountItem = New System.Windows.Forms.ToolStripLabel()
+        Me.BindingNavigatorSeparator1 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorMoveNextItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorMoveLastItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
+        Me.BindingNavigatorAddNewItem = New System.Windows.Forms.ToolStripButton()
+        Me.BindingNavigatorDeleteItem = New System.Windows.Forms.ToolStripButton()
+        Me.EstudiantesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
+        Me.NombreComboBox2 = New System.Windows.Forms.ComboBox()
+        Me.ProfesoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.ProfesoresTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter()
+        Me.NombreComboBox = New System.Windows.Forms.ComboBox()
+        Me.Nota_Lector_1TextBox = New System.Windows.Forms.TextBox()
         NombreLabel = New System.Windows.Forms.Label()
+        CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.EstudiantesBindingNavigator.SuspendLayout()
+        CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
+        '
+        'NombreLabel
+        '
+        NombreLabel.AutoSize = True
+        NombreLabel.Location = New System.Drawing.Point(33, 53)
+        NombreLabel.Name = "NombreLabel"
+        NombreLabel.Size = New System.Drawing.Size(47, 13)
+        NombreLabel.TabIndex = 51
+        NombreLabel.Text = "Nombre:"
         '
         'TextBox19
         '
@@ -346,24 +382,6 @@ Partial Class Evaluación_de_Defensa_Pública_2
         Me.TextBox1.Size = New System.Drawing.Size(40, 20)
         Me.TextBox1.TabIndex = 53
         '
-        'NombreLabel
-        '
-        NombreLabel.AutoSize = True
-        NombreLabel.Location = New System.Drawing.Point(33, 53)
-        NombreLabel.Name = "NombreLabel"
-        NombreLabel.Size = New System.Drawing.Size(47, 13)
-        NombreLabel.TabIndex = 51
-        NombreLabel.Text = "Nombre:"
-        '
-        'NombreComboBox
-        '
-        Me.NombreComboBox.DisplayMember = "Nombre"
-        Me.NombreComboBox.FormattingEnabled = True
-        Me.NombreComboBox.Location = New System.Drawing.Point(86, 50)
-        Me.NombreComboBox.Name = "NombreComboBox"
-        Me.NombreComboBox.Size = New System.Drawing.Size(270, 21)
-        Me.NombreComboBox.TabIndex = 52
-        '
         'Button3
         '
         Me.Button3.Location = New System.Drawing.Point(603, 639)
@@ -381,14 +399,6 @@ Partial Class Evaluación_de_Defensa_Pública_2
         Me.Button2.TabIndex = 103
         Me.Button2.Text = "PDF"
         Me.Button2.UseVisualStyleBackColor = True
-        '
-        'NombreComboBox1
-        '
-        Me.NombreComboBox1.FormattingEnabled = True
-        Me.NombreComboBox1.Location = New System.Drawing.Point(112, 627)
-        Me.NombreComboBox1.Name = "NombreComboBox1"
-        Me.NombreComboBox1.Size = New System.Drawing.Size(199, 21)
-        Me.NombreComboBox1.TabIndex = 102
         '
         'TextBox23
         '
@@ -520,14 +530,188 @@ Partial Class Evaluación_de_Defensa_Pública_2
         Me.Label8.Text = "Calidad de la exposición 5%"
         Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
+        '_Cal_ProyectosDeGraduaciónDataSet
+        '
+        Me._Cal_ProyectosDeGraduaciónDataSet.DataSetName = "_Cal_ProyectosDeGraduaciónDataSet"
+        Me._Cal_ProyectosDeGraduaciónDataSet.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema
+        '
+        'EstudiantesBindingSource
+        '
+        Me.EstudiantesBindingSource.DataMember = "Estudiantes"
+        Me.EstudiantesBindingSource.DataSource = Me._Cal_ProyectosDeGraduaciónDataSet
+        '
+        'EstudiantesTableAdapter
+        '
+        Me.EstudiantesTableAdapter.ClearBeforeFill = True
+        '
+        'TableAdapterManager
+        '
+        Me.TableAdapterManager.BackupDataSetBeforeUpdate = False
+        Me.TableAdapterManager.EstudiantesTableAdapter = Me.EstudiantesTableAdapter
+        Me.TableAdapterManager.ProfesoresTableAdapter = Nothing
+        Me.TableAdapterManager.UpdateOrder = PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.TableAdapterManager.UpdateOrderOption.InsertUpdateDelete
+        '
+        'EstudiantesBindingNavigator
+        '
+        Me.EstudiantesBindingNavigator.AddNewItem = Me.BindingNavigatorAddNewItem
+        Me.EstudiantesBindingNavigator.BindingSource = Me.EstudiantesBindingSource
+        Me.EstudiantesBindingNavigator.CountItem = Me.BindingNavigatorCountItem
+        Me.EstudiantesBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.EstudiantesBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.EstudiantesBindingNavigatorSaveItem})
+        Me.EstudiantesBindingNavigator.Location = New System.Drawing.Point(0, 0)
+        Me.EstudiantesBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
+        Me.EstudiantesBindingNavigator.MoveLastItem = Me.BindingNavigatorMoveLastItem
+        Me.EstudiantesBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
+        Me.EstudiantesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
+        Me.EstudiantesBindingNavigator.Name = "EstudiantesBindingNavigator"
+        Me.EstudiantesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
+        Me.EstudiantesBindingNavigator.Size = New System.Drawing.Size(793, 25)
+        Me.EstudiantesBindingNavigator.TabIndex = 105
+        Me.EstudiantesBindingNavigator.Text = "BindingNavigator1"
+        '
+        'BindingNavigatorMoveFirstItem
+        '
+        Me.BindingNavigatorMoveFirstItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
+        Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveFirstItem.Text = "Mover primero"
+        '
+        'BindingNavigatorMovePreviousItem
+        '
+        Me.BindingNavigatorMovePreviousItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
+        Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMovePreviousItem.Text = "Mover anterior"
+        '
+        'BindingNavigatorSeparator
+        '
+        Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        '
+        'BindingNavigatorPositionItem
+        '
+        Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
+        Me.BindingNavigatorPositionItem.AutoSize = False
+        Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Text = "0"
+        Me.BindingNavigatorPositionItem.ToolTipText = "Posición actual"
+        '
+        'BindingNavigatorCountItem
+        '
+        Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 15)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
+        Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
+        '
+        'BindingNavigatorSeparator1
+        '
+        Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorMoveNextItem
+        '
+        Me.BindingNavigatorMoveNextItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
+        Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveNextItem.Text = "Mover siguiente"
+        '
+        'BindingNavigatorMoveLastItem
+        '
+        Me.BindingNavigatorMoveLastItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
+        Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorMoveLastItem.Text = "Mover último"
+        '
+        'BindingNavigatorSeparator2
+        '
+        Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator"
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 6)
+        '
+        'BindingNavigatorAddNewItem
+        '
+        Me.BindingNavigatorAddNewItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
+        Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Text = "Agregar nuevo"
+        '
+        'BindingNavigatorDeleteItem
+        '
+        Me.BindingNavigatorDeleteItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
+        Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
+        Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 20)
+        Me.BindingNavigatorDeleteItem.Text = "Eliminar"
+        '
+        'EstudiantesBindingNavigatorSaveItem
+        '
+        Me.EstudiantesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
+        Me.EstudiantesBindingNavigatorSaveItem.Image = CType(resources.GetObject("EstudiantesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
+        Me.EstudiantesBindingNavigatorSaveItem.Name = "EstudiantesBindingNavigatorSaveItem"
+        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 23)
+        Me.EstudiantesBindingNavigatorSaveItem.Text = "Guardar datos"
+        '
+        'NombreComboBox2
+        '
+        Me.NombreComboBox2.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Nombre", True))
+        Me.NombreComboBox2.DataSource = Me.EstudiantesBindingSource
+        Me.NombreComboBox2.DisplayMember = "Nombre"
+        Me.NombreComboBox2.FormattingEnabled = True
+        Me.NombreComboBox2.Location = New System.Drawing.Point(86, 50)
+        Me.NombreComboBox2.Name = "NombreComboBox2"
+        Me.NombreComboBox2.Size = New System.Drawing.Size(330, 21)
+        Me.NombreComboBox2.TabIndex = 106
+        '
+        'ProfesoresBindingSource
+        '
+        Me.ProfesoresBindingSource.DataMember = "Profesores"
+        Me.ProfesoresBindingSource.DataSource = Me._Cal_ProyectosDeGraduaciónDataSet
+        '
+        'ProfesoresTableAdapter
+        '
+        Me.ProfesoresTableAdapter.ClearBeforeFill = True
+        '
+        'NombreComboBox
+        '
+        Me.NombreComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProfesoresBindingSource, "Nombre", True))
+        Me.NombreComboBox.DataSource = Me.ProfesoresBindingSource
+        Me.NombreComboBox.DisplayMember = "Nombre"
+        Me.NombreComboBox.FormattingEnabled = True
+        Me.NombreComboBox.Location = New System.Drawing.Point(112, 627)
+        Me.NombreComboBox.Name = "NombreComboBox"
+        Me.NombreComboBox.Size = New System.Drawing.Size(250, 21)
+        Me.NombreComboBox.TabIndex = 107
+        '
+        'Nota_Lector_1TextBox
+        '
+        Me.Nota_Lector_1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Nota Lector 1", True))
+        Me.Nota_Lector_1TextBox.Location = New System.Drawing.Point(413, 571)
+        Me.Nota_Lector_1TextBox.Name = "Nota_Lector_1TextBox"
+        Me.Nota_Lector_1TextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Nota_Lector_1TextBox.TabIndex = 108
+        '
         'Evaluación_de_Defensa_Pública_2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(800, 701)
+        Me.ClientSize = New System.Drawing.Size(793, 749)
+        Me.Controls.Add(Me.Nota_Lector_1TextBox)
+        Me.Controls.Add(Me.NombreComboBox)
+        Me.Controls.Add(Me.NombreComboBox2)
+        Me.Controls.Add(Me.EstudiantesBindingNavigator)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.NombreComboBox1)
         Me.Controls.Add(Me.TextBox23)
         Me.Controls.Add(Me.TextBox22)
         Me.Controls.Add(Me.TextBox21)
@@ -578,9 +762,14 @@ Partial Class Evaluación_de_Defensa_Pública_2
         Me.Controls.Add(Me.TextBox2)
         Me.Controls.Add(Me.TextBox1)
         Me.Controls.Add(NombreLabel)
-        Me.Controls.Add(Me.NombreComboBox)
         Me.Name = "Evaluación_de_Defensa_Pública_2"
         Me.Text = "Evaluación de Defensa Pública 2"
+        CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.EstudiantesBindingNavigator.ResumeLayout(False)
+        Me.EstudiantesBindingNavigator.PerformLayout()
+        CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -619,10 +808,8 @@ Partial Class Evaluación_de_Defensa_Pública_2
     Friend WithEvents Label1 As Label
     Friend WithEvents TextBox2 As TextBox
     Friend WithEvents TextBox1 As TextBox
-    Friend WithEvents NombreComboBox As ComboBox
     Friend WithEvents Button3 As Button
     Friend WithEvents Button2 As Button
-    Friend WithEvents NombreComboBox1 As ComboBox
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents TextBox22 As TextBox
     Friend WithEvents TextBox21 As TextBox
@@ -639,4 +826,26 @@ Partial Class Evaluación_de_Defensa_Pública_2
     Friend WithEvents Label22 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label8 As Label
+    Friend WithEvents _Cal_ProyectosDeGraduaciónDataSet As _Cal_ProyectosDeGraduaciónDataSet
+    Friend WithEvents EstudiantesBindingSource As BindingSource
+    Friend WithEvents EstudiantesTableAdapter As _Cal_ProyectosDeGraduaciónDataSetTableAdapters.EstudiantesTableAdapter
+    Friend WithEvents TableAdapterManager As _Cal_ProyectosDeGraduaciónDataSetTableAdapters.TableAdapterManager
+    Friend WithEvents EstudiantesBindingNavigator As BindingNavigator
+    Friend WithEvents BindingNavigatorAddNewItem As ToolStripButton
+    Friend WithEvents BindingNavigatorCountItem As ToolStripLabel
+    Friend WithEvents BindingNavigatorDeleteItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveFirstItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMovePreviousItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator As ToolStripSeparator
+    Friend WithEvents BindingNavigatorPositionItem As ToolStripTextBox
+    Friend WithEvents BindingNavigatorSeparator1 As ToolStripSeparator
+    Friend WithEvents BindingNavigatorMoveNextItem As ToolStripButton
+    Friend WithEvents BindingNavigatorMoveLastItem As ToolStripButton
+    Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
+    Friend WithEvents EstudiantesBindingNavigatorSaveItem As ToolStripButton
+    Friend WithEvents NombreComboBox2 As ComboBox
+    Friend WithEvents ProfesoresBindingSource As BindingSource
+    Friend WithEvents ProfesoresTableAdapter As _Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter
+    Friend WithEvents NombreComboBox As ComboBox
+    Friend WithEvents Nota_Lector_1TextBox As TextBox
 End Class

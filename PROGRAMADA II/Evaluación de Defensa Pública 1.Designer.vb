@@ -165,8 +165,8 @@ Partial Class Evaluación_de_Defensa_Pública_1
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Número total de elementos"
         '
         'BindingNavigatorDeleteItem
@@ -205,7 +205,6 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Posición"
         Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -255,7 +254,7 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.NombreComboBox.FormattingEnabled = True
         Me.NombreComboBox.Location = New System.Drawing.Point(85, 67)
         Me.NombreComboBox.Name = "NombreComboBox"
-        Me.NombreComboBox.Size = New System.Drawing.Size(121, 21)
+        Me.NombreComboBox.Size = New System.Drawing.Size(330, 21)
         Me.NombreComboBox.TabIndex = 2
         '
         'TextBox1
@@ -667,6 +666,8 @@ Partial Class Evaluación_de_Defensa_Pública_1
         'NombreComboBox1
         '
         Me.NombreComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProfesoresBindingSource, "Nombre", True))
+        Me.NombreComboBox1.DataSource = Me.ProfesoresBindingSource
+        Me.NombreComboBox1.DisplayMember = "Nombre"
         Me.NombreComboBox1.FormattingEnabled = True
         Me.NombreComboBox1.Location = New System.Drawing.Point(111, 655)
         Me.NombreComboBox1.Name = "NombreComboBox1"
