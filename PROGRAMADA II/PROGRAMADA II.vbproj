@@ -150,6 +150,9 @@
       <DependentUpon>_Cal_ProyectosDeGraduaciónDataSet.xsd</DependentUpon>
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Compile>
+    <Compile Include="_Cal_ProyectosDeGraduaciónDataSet.vb">
+      <DependentUpon>_Cal_ProyectosDeGraduaciónDataSet.xsd</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Evaluación de Defensa Pública 1.resx">

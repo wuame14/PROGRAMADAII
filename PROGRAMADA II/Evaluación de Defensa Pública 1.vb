@@ -35,7 +35,8 @@ Public Class Evaluación_de_Defensa_Pública_1
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         EstudiantesBindingSource.EndEdit()
-        EstudiantesTableAdapter.Update()
+        'EstudiantesTableAdapter.Update()
+        TableAdapterManager.UpdateAll(_Cal_ProyectosDeGraduaciónDataSet)
         MsgBox("guardado", MsgBoxStyle.Information, "guardar")
 
     End Sub

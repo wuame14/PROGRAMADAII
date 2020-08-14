@@ -20,4 +20,13 @@
         Form1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub NombreComboBox_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NombreComboBox.SelectedIndexChanged
+        Dim v As DataRowView = NombreComboBox.SelectedItem()
+        Dim row As _Cal_ProyectosDeGraduaciónDataSet.EstudiantesRow = v.Row
+
+
+        TextBox2.Text = EstudiantesTableAdapter.sumNotas(row.Carné)
+    End Sub
+
 End Class

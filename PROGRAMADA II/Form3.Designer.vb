@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Acta_Defensa_Pública
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Acta_Defensa_Pública
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Acta_Defensa_Pública))
@@ -48,6 +48,8 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.EstudiantesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.NombreComboBox = New System.Windows.Forms.ComboBox()
+        Me.EstudiantesBindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.CalProyectosDeGraduaciónDataSetBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.Nombre_del_ProyectoTextBox = New System.Windows.Forms.TextBox()
         Me.Label7 = New System.Windows.Forms.Label()
         Me.Label8 = New System.Windows.Forms.Label()
@@ -82,27 +84,37 @@ Partial Class Acta_Defensa_Pública
         Me.Label31 = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.EstudiantesBindingSource2 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EstudiantesBindingSource3 = New System.Windows.Forms.BindingSource(Me.components)
+        Me.EstudiantesBindingSource4 = New System.Windows.Forms.BindingSource(Me.components)
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.EstudiantesBindingNavigator.SuspendLayout()
+        CType(Me.EstudiantesBindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.CalProyectosDeGraduaciónDataSetBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EstudiantesBindingSource2, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EstudiantesBindingSource3, System.ComponentModel.ISupportInitialize).BeginInit()
+        CType(Me.EstudiantesBindingSource4, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
         '
         'Label1
         '
         Me.Label1.AutoSize = True
-        Me.Label1.Location = New System.Drawing.Point(276, 23)
+        Me.Label1.Location = New System.Drawing.Point(736, 55)
+        Me.Label1.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(230, 13)
+        Me.Label1.Size = New System.Drawing.Size(598, 32)
         Me.Label1.TabIndex = 0
         Me.Label1.Text = "INSTITUTO TECNOLÓGICO DE COSTA RICA"
         '
         'Label2
         '
         Me.Label2.AutoSize = True
-        Me.Label2.Location = New System.Drawing.Point(237, 45)
+        Me.Label2.Location = New System.Drawing.Point(632, 107)
+        Me.Label2.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(300, 13)
+        Me.Label2.Size = New System.Drawing.Size(775, 32)
         Me.Label2.TabIndex = 1
         Me.Label2.Text = "ESCUELA DE INGENIERÍA DE PRODUCCIÓN INDUSTRIAL"
         '
@@ -110,9 +122,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label3.AutoSize = True
         Me.Label3.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label3.Location = New System.Drawing.Point(322, 58)
+        Me.Label3.Location = New System.Drawing.Point(859, 138)
+        Me.Label3.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(140, 15)
+        Me.Label3.Size = New System.Drawing.Size(340, 36)
         Me.Label3.TabIndex = 2
         Me.Label3.Text = "Acta de Defensa Pública"
         '
@@ -120,9 +133,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label4.AutoSize = True
         Me.Label4.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label4.Location = New System.Drawing.Point(322, 73)
+        Me.Label4.Location = New System.Drawing.Point(859, 174)
+        Me.Label4.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label4.Name = "Label4"
-        Me.Label4.Size = New System.Drawing.Size(138, 15)
+        Me.Label4.Size = New System.Drawing.Size(337, 36)
         Me.Label4.TabIndex = 3
         Me.Label4.Text = "Proyecto de Graduación"
         '
@@ -130,9 +144,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label5.AutoSize = True
         Me.Label5.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label5.Location = New System.Drawing.Point(11, 100)
+        Me.Label5.Location = New System.Drawing.Point(29, 238)
+        Me.Label5.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label5.Name = "Label5"
-        Me.Label5.Size = New System.Drawing.Size(417, 15)
+        Me.Label5.Size = New System.Drawing.Size(1015, 36)
         Me.Label5.TabIndex = 4
         Me.Label5.Text = "Se hace constar que el Trabajo de Proyecto de Graduación presentado por:"
         '
@@ -140,9 +155,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label6.AutoSize = True
         Me.Label6.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label6.Location = New System.Drawing.Point(11, 126)
+        Me.Label6.Location = New System.Drawing.Point(29, 300)
+        Me.Label6.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(50, 15)
+        Me.Label6.Size = New System.Drawing.Size(120, 36)
         Me.Label6.TabIndex = 5
         Me.Label6.Text = "titulado:"
         '
@@ -173,6 +189,7 @@ Partial Class Acta_Defensa_Pública
         Me.EstudiantesBindingNavigator.BindingSource = Me.EstudiantesBindingSource
         Me.EstudiantesBindingNavigator.CountItem = Me.BindingNavigatorCountItem
         Me.EstudiantesBindingNavigator.DeleteItem = Me.BindingNavigatorDeleteItem
+        Me.EstudiantesBindingNavigator.ImageScalingSize = New System.Drawing.Size(40, 40)
         Me.EstudiantesBindingNavigator.Items.AddRange(New System.Windows.Forms.ToolStripItem() {Me.BindingNavigatorMoveFirstItem, Me.BindingNavigatorMovePreviousItem, Me.BindingNavigatorSeparator, Me.BindingNavigatorPositionItem, Me.BindingNavigatorCountItem, Me.BindingNavigatorSeparator1, Me.BindingNavigatorMoveNextItem, Me.BindingNavigatorMoveLastItem, Me.BindingNavigatorSeparator2, Me.BindingNavigatorAddNewItem, Me.BindingNavigatorDeleteItem, Me.EstudiantesBindingNavigatorSaveItem})
         Me.EstudiantesBindingNavigator.Location = New System.Drawing.Point(0, 0)
         Me.EstudiantesBindingNavigator.MoveFirstItem = Me.BindingNavigatorMoveFirstItem
@@ -180,8 +197,9 @@ Partial Class Acta_Defensa_Pública
         Me.EstudiantesBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.EstudiantesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.EstudiantesBindingNavigator.Name = "EstudiantesBindingNavigator"
+        Me.EstudiantesBindingNavigator.Padding = New System.Windows.Forms.Padding(0, 0, 5, 0)
         Me.EstudiantesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.EstudiantesBindingNavigator.Size = New System.Drawing.Size(846, 25)
+        Me.EstudiantesBindingNavigator.Size = New System.Drawing.Size(2256, 51)
         Me.EstudiantesBindingNavigator.TabIndex = 6
         Me.EstudiantesBindingNavigator.Text = "BindingNavigator1"
         '
@@ -191,13 +209,13 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(58, 44)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(87, 44)
         Me.BindingNavigatorCountItem.Text = "of {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
@@ -207,7 +225,7 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(58, 44)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
@@ -216,7 +234,7 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(58, 44)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorMovePreviousItem
@@ -225,13 +243,13 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(58, 44)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 51)
         '
         'BindingNavigatorPositionItem
         '
@@ -239,14 +257,14 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorPositionItem.AutoSize = False
         Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(127, 47)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 51)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -254,7 +272,7 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(58, 44)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -263,46 +281,62 @@ Partial Class Acta_Defensa_Pública
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(23, 22)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(58, 44)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 25)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 51)
         '
         'EstudiantesBindingNavigatorSaveItem
         '
         Me.EstudiantesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.EstudiantesBindingNavigatorSaveItem.Image = CType(resources.GetObject("EstudiantesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.EstudiantesBindingNavigatorSaveItem.Name = "EstudiantesBindingNavigatorSaveItem"
-        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(23, 22)
+        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(58, 44)
         Me.EstudiantesBindingNavigatorSaveItem.Text = "Save Data"
         '
         'NombreComboBox
         '
         Me.NombreComboBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Nombre", True))
+        Me.NombreComboBox.DataSource = Me.EstudiantesBindingSource4
+        Me.NombreComboBox.DisplayMember = "Nombre"
         Me.NombreComboBox.FormattingEnabled = True
-        Me.NombreComboBox.Location = New System.Drawing.Point(444, 100)
+        Me.NombreComboBox.Location = New System.Drawing.Point(1184, 238)
+        Me.NombreComboBox.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.NombreComboBox.Name = "NombreComboBox"
-        Me.NombreComboBox.Size = New System.Drawing.Size(251, 21)
+        Me.NombreComboBox.Size = New System.Drawing.Size(663, 39)
         Me.NombreComboBox.TabIndex = 8
+        Me.NombreComboBox.ValueMember = "Carné"
+        '
+        'EstudiantesBindingSource1
+        '
+        Me.EstudiantesBindingSource1.DataMember = "Estudiantes"
+        Me.EstudiantesBindingSource1.DataSource = Me.CalProyectosDeGraduaciónDataSetBindingSource
+        '
+        'CalProyectosDeGraduaciónDataSetBindingSource
+        '
+        Me.CalProyectosDeGraduaciónDataSetBindingSource.DataSource = Me._Cal_ProyectosDeGraduaciónDataSet
+        Me.CalProyectosDeGraduaciónDataSetBindingSource.Position = 0
         '
         'Nombre_del_ProyectoTextBox
         '
         Me.Nombre_del_ProyectoTextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Nombre del Proyecto", True))
-        Me.Nombre_del_ProyectoTextBox.Location = New System.Drawing.Point(67, 126)
+        Me.Nombre_del_ProyectoTextBox.Location = New System.Drawing.Point(179, 300)
+        Me.Nombre_del_ProyectoTextBox.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.Nombre_del_ProyectoTextBox.Name = "Nombre_del_ProyectoTextBox"
-        Me.Nombre_del_ProyectoTextBox.Size = New System.Drawing.Size(439, 20)
+        Me.Nombre_del_ProyectoTextBox.Size = New System.Drawing.Size(1164, 38)
         Me.Nombre_del_ProyectoTextBox.TabIndex = 9
         '
         'Label7
         '
         Me.Label7.AutoSize = True
         Me.Label7.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label7.Location = New System.Drawing.Point(12, 153)
+        Me.Label7.Location = New System.Drawing.Point(32, 365)
+        Me.Label7.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(685, 15)
+        Me.Label7.Size = New System.Drawing.Size(1658, 36)
         Me.Label7.TabIndex = 10
         Me.Label7.Text = "cumple con las regulaciones y requisitos establecidos en el Reglamento del Proyec" &
     "to de Graduación, para optar al grado de "
@@ -311,9 +345,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label8.AutoSize = True
         Me.Label8.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label8.Location = New System.Drawing.Point(11, 168)
+        Me.Label8.Location = New System.Drawing.Point(29, 401)
+        Me.Label8.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(287, 15)
+        Me.Label8.Size = New System.Drawing.Size(695, 36)
         Me.Label8.TabIndex = 11
         Me.Label8.Text = "Licenciatura de Ingeniería en Producción Industrial."
         '
@@ -321,9 +356,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label9.AutoSize = True
         Me.Label9.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label9.Location = New System.Drawing.Point(11, 192)
+        Me.Label9.Location = New System.Drawing.Point(29, 458)
+        Me.Label9.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(312, 15)
+        Me.Label9.Size = New System.Drawing.Size(748, 36)
         Me.Label9.TabIndex = 12
         Me.Label9.Text = "Además se acuerda que el documento se ha declarado:"
         '
@@ -331,9 +367,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.RadioButton1.AutoSize = True
         Me.RadioButton1.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton1.Location = New System.Drawing.Point(12, 218)
+        Me.RadioButton1.Location = New System.Drawing.Point(32, 520)
+        Me.RadioButton1.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.RadioButton1.Name = "RadioButton1"
-        Me.RadioButton1.Size = New System.Drawing.Size(83, 17)
+        Me.RadioButton1.Size = New System.Drawing.Size(193, 36)
         Me.RadioButton1.TabIndex = 13
         Me.RadioButton1.TabStop = True
         Me.RadioButton1.Text = "Aprobado."
@@ -343,9 +380,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label10.AutoSize = True
         Me.Label10.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label10.Location = New System.Drawing.Point(94, 218)
+        Me.Label10.Location = New System.Drawing.Point(251, 520)
+        Me.Label10.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(189, 15)
+        Me.Label10.Size = New System.Drawing.Size(454, 36)
         Me.Label10.TabIndex = 14
         Me.Label10.Text = "(No está sujeto a modificaciones)"
         '
@@ -353,9 +391,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label11.AutoSize = True
         Me.Label11.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label11.Location = New System.Drawing.Point(280, 218)
+        Me.Label11.Location = New System.Drawing.Point(747, 520)
+        Me.Label11.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(122, 15)
+        Me.Label11.Size = New System.Drawing.Size(303, 36)
         Me.Label11.TabIndex = 15
         Me.Label11.Text = "Artículo 15, inciso g.1"
         '
@@ -363,9 +402,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.RadioButton2.AutoSize = True
         Me.RadioButton2.Font = New System.Drawing.Font("Microsoft Sans Serif", 8.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.RadioButton2.Location = New System.Drawing.Point(12, 236)
+        Me.RadioButton2.Location = New System.Drawing.Point(32, 563)
+        Me.RadioButton2.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.RadioButton2.Name = "RadioButton2"
-        Me.RadioButton2.Size = New System.Drawing.Size(220, 17)
+        Me.RadioButton2.Size = New System.Drawing.Size(521, 36)
         Me.RadioButton2.TabIndex = 16
         Me.RadioButton2.TabStop = True
         Me.RadioButton2.Text = "Aprobado sujeto a modificaciones."
@@ -375,26 +415,29 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label12.AutoSize = True
         Me.Label12.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label12.Location = New System.Drawing.Point(231, 236)
+        Me.Label12.Location = New System.Drawing.Point(616, 563)
+        Me.Label12.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(307, 15)
+        Me.Label12.Size = New System.Drawing.Size(738, 36)
         Me.Label12.TabIndex = 17
         Me.Label12.Text = "Para dichas modificaciones el/la estudiante cuenta con"
         '
         'TextBox1
         '
-        Me.TextBox1.Location = New System.Drawing.Point(535, 231)
+        Me.TextBox1.Location = New System.Drawing.Point(1427, 551)
+        Me.TextBox1.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.TextBox1.Name = "TextBox1"
-        Me.TextBox1.Size = New System.Drawing.Size(36, 20)
+        Me.TextBox1.Size = New System.Drawing.Size(89, 38)
         Me.TextBox1.TabIndex = 18
         '
         'Label13
         '
         Me.Label13.AutoSize = True
         Me.Label13.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label13.Location = New System.Drawing.Point(577, 236)
+        Me.Label13.Location = New System.Drawing.Point(1539, 563)
+        Me.Label13.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(156, 15)
+        Me.Label13.Size = New System.Drawing.Size(373, 36)
         Me.Label13.TabIndex = 19
         Me.Label13.Text = "días hábiles para presentar"
         '
@@ -402,9 +445,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label14.AutoSize = True
         Me.Label14.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label14.Location = New System.Drawing.Point(12, 253)
+        Me.Label14.Location = New System.Drawing.Point(32, 603)
+        Me.Label14.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(216, 15)
+        Me.Label14.Size = New System.Drawing.Size(512, 36)
         Me.Label14.TabIndex = 20
         Me.Label14.Text = "los miembros del Jurado Examinador."
         '
@@ -412,9 +456,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label15.AutoSize = True
         Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(12, 268)
+        Me.Label15.Location = New System.Drawing.Point(32, 639)
+        Me.Label15.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(787, 15)
+        Me.Label15.Size = New System.Drawing.Size(1911, 36)
         Me.Label15.TabIndex = 21
         Me.Label15.Text = "Si el estudiante no entrega las correcciones pierde automáticamente el proyecto, " &
     "asignándose una nota final inferior a 60. Artículo 15, inciso g.2"
@@ -423,26 +468,29 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label16.AutoSize = True
         Me.Label16.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label16.Location = New System.Drawing.Point(16, 296)
+        Me.Label16.Location = New System.Drawing.Point(43, 706)
+        Me.Label16.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(336, 15)
+        Me.Label16.Size = New System.Drawing.Size(739, 36)
         Me.Label16.TabIndex = 22
         Me.Label16.Text = "La nota correspondiente a la defensa pública es de"
         '
         'TextBox2
         '
-        Me.TextBox2.Location = New System.Drawing.Point(358, 295)
+        Me.TextBox2.Location = New System.Drawing.Point(955, 703)
+        Me.TextBox2.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.TextBox2.Name = "TextBox2"
-        Me.TextBox2.Size = New System.Drawing.Size(90, 20)
+        Me.TextBox2.Size = New System.Drawing.Size(233, 38)
         Me.TextBox2.TabIndex = 23
         '
         'Label17
         '
         Me.Label17.AutoSize = True
         Me.Label17.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label17.Location = New System.Drawing.Point(16, 321)
+        Me.Label17.Location = New System.Drawing.Point(43, 765)
+        Me.Label17.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(111, 15)
+        Me.Label17.Size = New System.Drawing.Size(262, 36)
         Me.Label17.TabIndex = 24
         Me.Label17.Text = "Firmado conforme:"
         '
@@ -450,9 +498,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label18.AutoSize = True
         Me.Label18.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label18.Location = New System.Drawing.Point(50, 390)
+        Me.Label18.Location = New System.Drawing.Point(133, 930)
+        Me.Label18.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(27, 15)
+        Me.Label18.Size = New System.Drawing.Size(65, 36)
         Me.Label18.TabIndex = 25
         Me.Label18.Text = "Ing."
         '
@@ -460,9 +509,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label19.AutoSize = True
         Me.Label19.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label19.Location = New System.Drawing.Point(50, 375)
+        Me.Label19.Location = New System.Drawing.Point(133, 894)
+        Me.Label19.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(182, 15)
+        Me.Label19.Size = New System.Drawing.Size(440, 36)
         Me.Label19.TabIndex = 26
         Me.Label19.Text = "_________________________"
         '
@@ -470,9 +520,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label20.AutoSize = True
         Me.Label20.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label20.Location = New System.Drawing.Point(50, 405)
+        Me.Label20.Location = New System.Drawing.Point(133, 966)
+        Me.Label20.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(128, 15)
+        Me.Label20.Size = New System.Drawing.Size(303, 36)
         Me.Label20.TabIndex = 27
         Me.Label20.Text = "Miembro del Tribunal."
         '
@@ -480,9 +531,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label21.AutoSize = True
         Me.Label21.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label21.Location = New System.Drawing.Point(513, 405)
+        Me.Label21.Location = New System.Drawing.Point(1368, 966)
+        Me.Label21.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(128, 15)
+        Me.Label21.Size = New System.Drawing.Size(303, 36)
         Me.Label21.TabIndex = 30
         Me.Label21.Text = "Miembro del Tribunal."
         '
@@ -490,9 +542,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label22.AutoSize = True
         Me.Label22.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label22.Location = New System.Drawing.Point(513, 375)
+        Me.Label22.Location = New System.Drawing.Point(1368, 894)
+        Me.Label22.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(182, 15)
+        Me.Label22.Size = New System.Drawing.Size(440, 36)
         Me.Label22.TabIndex = 29
         Me.Label22.Text = "_________________________"
         '
@@ -500,9 +553,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label23.AutoSize = True
         Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label23.Location = New System.Drawing.Point(513, 390)
+        Me.Label23.Location = New System.Drawing.Point(1368, 930)
+        Me.Label23.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(27, 15)
+        Me.Label23.Size = New System.Drawing.Size(65, 36)
         Me.Label23.TabIndex = 28
         Me.Label23.Text = "Ing."
         '
@@ -510,9 +564,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label24.AutoSize = True
         Me.Label24.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label24.Location = New System.Drawing.Point(50, 497)
+        Me.Label24.Location = New System.Drawing.Point(133, 1185)
+        Me.Label24.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(111, 15)
+        Me.Label24.Size = New System.Drawing.Size(274, 36)
         Me.Label24.TabIndex = 33
         Me.Label24.Text = "Profesor (a) Asesor"
         '
@@ -520,9 +575,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label25.AutoSize = True
         Me.Label25.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label25.Location = New System.Drawing.Point(50, 467)
+        Me.Label25.Location = New System.Drawing.Point(133, 1114)
+        Me.Label25.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label25.Name = "Label25"
-        Me.Label25.Size = New System.Drawing.Size(182, 15)
+        Me.Label25.Size = New System.Drawing.Size(440, 36)
         Me.Label25.TabIndex = 32
         Me.Label25.Text = "_________________________"
         '
@@ -530,9 +586,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label26.AutoSize = True
         Me.Label26.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label26.Location = New System.Drawing.Point(50, 482)
+        Me.Label26.Location = New System.Drawing.Point(133, 1149)
+        Me.Label26.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label26.Name = "Label26"
-        Me.Label26.Size = New System.Drawing.Size(27, 15)
+        Me.Label26.Size = New System.Drawing.Size(65, 36)
         Me.Label26.TabIndex = 31
         Me.Label26.Text = "Ing."
         '
@@ -540,9 +597,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label27.AutoSize = True
         Me.Label27.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label27.Location = New System.Drawing.Point(513, 482)
+        Me.Label27.Location = New System.Drawing.Point(1368, 1149)
+        Me.Label27.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label27.Name = "Label27"
-        Me.Label27.Size = New System.Drawing.Size(65, 15)
+        Me.Label27.Size = New System.Drawing.Size(156, 36)
         Me.Label27.TabIndex = 36
         Me.Label27.Text = "Estudiante"
         '
@@ -550,9 +608,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label28.AutoSize = True
         Me.Label28.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label28.Location = New System.Drawing.Point(513, 467)
+        Me.Label28.Location = New System.Drawing.Point(1368, 1114)
+        Me.Label28.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label28.Name = "Label28"
-        Me.Label28.Size = New System.Drawing.Size(182, 15)
+        Me.Label28.Size = New System.Drawing.Size(440, 36)
         Me.Label28.TabIndex = 35
         Me.Label28.Text = "_________________________"
         '
@@ -560,9 +619,10 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label29.AutoSize = True
         Me.Label29.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label29.Location = New System.Drawing.Point(212, 598)
+        Me.Label29.Location = New System.Drawing.Point(565, 1426)
+        Me.Label29.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label29.Name = "Label29"
-        Me.Label29.Size = New System.Drawing.Size(50, 15)
+        Me.Label29.Size = New System.Drawing.Size(120, 36)
         Me.Label29.TabIndex = 37
         Me.Label29.Text = "Cartago"
         '
@@ -570,58 +630,80 @@ Partial Class Acta_Defensa_Pública
         '
         Me.Label30.AutoSize = True
         Me.Label30.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label30.Location = New System.Drawing.Point(257, 598)
+        Me.Label30.Location = New System.Drawing.Point(685, 1426)
+        Me.Label30.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label30.Name = "Label30"
-        Me.Label30.Size = New System.Drawing.Size(0, 15)
+        Me.Label30.Size = New System.Drawing.Size(0, 36)
         Me.Label30.TabIndex = 38
         '
         'TextBox3
         '
-        Me.TextBox3.Location = New System.Drawing.Point(260, 597)
+        Me.TextBox3.Location = New System.Drawing.Point(693, 1424)
+        Me.TextBox3.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.TextBox3.Name = "TextBox3"
-        Me.TextBox3.Size = New System.Drawing.Size(90, 20)
+        Me.TextBox3.Size = New System.Drawing.Size(233, 38)
         Me.TextBox3.TabIndex = 39
         '
         'TextBox4
         '
-        Me.TextBox4.Location = New System.Drawing.Point(406, 597)
+        Me.TextBox4.Location = New System.Drawing.Point(1083, 1424)
+        Me.TextBox4.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.TextBox4.Name = "TextBox4"
-        Me.TextBox4.Size = New System.Drawing.Size(70, 20)
+        Me.TextBox4.Size = New System.Drawing.Size(180, 38)
         Me.TextBox4.TabIndex = 40
         '
         'Label31
         '
         Me.Label31.AutoSize = True
         Me.Label31.Font = New System.Drawing.Font("Microsoft Sans Serif", 9.0!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label31.Location = New System.Drawing.Point(367, 598)
+        Me.Label31.Location = New System.Drawing.Point(979, 1426)
+        Me.Label31.Margin = New System.Windows.Forms.Padding(8, 0, 8, 0)
         Me.Label31.Name = "Label31"
-        Me.Label31.Size = New System.Drawing.Size(24, 15)
+        Me.Label31.Size = New System.Drawing.Size(55, 36)
         Me.Label31.TabIndex = 41
         Me.Label31.Text = "del"
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(693, 587)
+        Me.Button1.Location = New System.Drawing.Point(1848, 1400)
+        Me.Button1.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(106, 23)
+        Me.Button1.Size = New System.Drawing.Size(283, 55)
         Me.Button1.TabIndex = 42
         Me.Button1.Text = "Regresar al Menú"
         Me.Button1.UseVisualStyleBackColor = True
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(693, 539)
+        Me.Button2.Location = New System.Drawing.Point(1848, 1285)
+        Me.Button2.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(106, 33)
+        Me.Button2.Size = New System.Drawing.Size(283, 79)
         Me.Button2.TabIndex = 43
         Me.Button2.Text = "PDF"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'EstudiantesBindingSource2
+        '
+        Me.EstudiantesBindingSource2.DataMember = "Estudiantes"
+        Me.EstudiantesBindingSource2.DataSource = Me.CalProyectosDeGraduaciónDataSetBindingSource
+        '
+        'EstudiantesBindingSource3
+        '
+        Me.EstudiantesBindingSource3.DataMember = "Estudiantes"
+        Me.EstudiantesBindingSource3.DataSource = Me.CalProyectosDeGraduaciónDataSetBindingSource
+        '
+        'EstudiantesBindingSource4
+        '
+        Me.EstudiantesBindingSource4.DataMember = "Estudiantes"
+        Me.EstudiantesBindingSource4.DataSource = Me.CalProyectosDeGraduaciónDataSetBindingSource
+        '
         'Acta_Defensa_Pública
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(846, 622)
+        Me.AutoScroll = True
+        Me.ClientSize = New System.Drawing.Size(2256, 1483)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.Label31)
@@ -664,6 +746,7 @@ Partial Class Acta_Defensa_Pública
         Me.Controls.Add(Me.Label3)
         Me.Controls.Add(Me.Label2)
         Me.Controls.Add(Me.Label1)
+        Me.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.Name = "Acta_Defensa_Pública"
         Me.Text = "Acta_Defensa_Pública"
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).EndInit()
@@ -671,6 +754,11 @@ Partial Class Acta_Defensa_Pública
         CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).EndInit()
         Me.EstudiantesBindingNavigator.ResumeLayout(False)
         Me.EstudiantesBindingNavigator.PerformLayout()
+        CType(Me.EstudiantesBindingSource1, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.CalProyectosDeGraduaciónDataSetBindingSource, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstudiantesBindingSource2, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstudiantesBindingSource3, System.ComponentModel.ISupportInitialize).EndInit()
+        CType(Me.EstudiantesBindingSource4, System.ComponentModel.ISupportInitialize).EndInit()
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -734,4 +822,9 @@ Partial Class Acta_Defensa_Pública
     Friend WithEvents Label31 As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents EstudiantesBindingSource1 As BindingSource
+    Friend WithEvents CalProyectosDeGraduaciónDataSetBindingSource As BindingSource
+    Friend WithEvents EstudiantesBindingSource2 As BindingSource
+    Friend WithEvents EstudiantesBindingSource3 As BindingSource
+    Friend WithEvents EstudiantesBindingSource4 As BindingSource
 End Class
