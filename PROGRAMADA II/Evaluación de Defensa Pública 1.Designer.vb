@@ -25,6 +25,7 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.components = New System.ComponentModel.Container()
         Dim NombreLabel As System.Windows.Forms.Label
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Evaluación_de_Defensa_Pública_1))
+        Dim Lector_1Label As System.Windows.Forms.Label
         Me._Cal_ProyectosDeGraduaciónDataSet = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSet()
         Me.EstudiantesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EstudiantesTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.EstudiantesTableAdapter()
@@ -82,7 +83,6 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.Label22 = New System.Windows.Forms.Label()
         Me.TextBox16 = New System.Windows.Forms.TextBox()
         Me.Label23 = New System.Windows.Forms.Label()
-        Me.Label24 = New System.Windows.Forms.Label()
         Me.Label25 = New System.Windows.Forms.Label()
         Me.Label26 = New System.Windows.Forms.Label()
         Me.TextBox18 = New System.Windows.Forms.TextBox()
@@ -94,10 +94,12 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.TextBox23 = New System.Windows.Forms.TextBox()
         Me.ProfesoresBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.ProfesoresTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter()
-        Me.NombreComboBox1 = New System.Windows.Forms.ComboBox()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Button3 = New System.Windows.Forms.Button()
+        Me.Button4 = New System.Windows.Forms.Button()
+        Me.Lector_1TextBox = New System.Windows.Forms.TextBox()
         NombreLabel = New System.Windows.Forms.Label()
+        Lector_1Label = New System.Windows.Forms.Label()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -576,15 +578,6 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.Label23.Text = "Dominio del tema"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
-        'Label24
-        '
-        Me.Label24.Location = New System.Drawing.Point(51, 658)
-        Me.Label24.Name = "Label24"
-        Me.Label24.Size = New System.Drawing.Size(67, 18)
-        Me.Label24.TabIndex = 44
-        Me.Label24.Text = "Lector 1:"
-        Me.Label24.TextAlign = System.Drawing.ContentAlignment.TopCenter
-        '
         'Label25
         '
         Me.Label25.Location = New System.Drawing.Point(288, 602)
@@ -663,17 +656,6 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         Me.ProfesoresTableAdapter.ClearBeforeFill = True
         '
-        'NombreComboBox1
-        '
-        Me.NombreComboBox1.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.ProfesoresBindingSource, "Nombre", True))
-        Me.NombreComboBox1.DataSource = Me.ProfesoresBindingSource
-        Me.NombreComboBox1.DisplayMember = "Nombre"
-        Me.NombreComboBox1.FormattingEnabled = True
-        Me.NombreComboBox1.Location = New System.Drawing.Point(111, 655)
-        Me.NombreComboBox1.Name = "NombreComboBox1"
-        Me.NombreComboBox1.Size = New System.Drawing.Size(199, 21)
-        Me.NombreComboBox1.TabIndex = 55
-        '
         'Button2
         '
         Me.Button2.Location = New System.Drawing.Point(413, 655)
@@ -692,14 +674,42 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.Button3.Text = "Regresar al Menú"
         Me.Button3.UseVisualStyleBackColor = True
         '
+        'Button4
+        '
+        Me.Button4.Location = New System.Drawing.Point(618, 367)
+        Me.Button4.Name = "Button4"
+        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.TabIndex = 58
+        Me.Button4.Text = "Button4"
+        Me.Button4.UseVisualStyleBackColor = True
+        '
+        'Lector_1Label
+        '
+        Lector_1Label.AutoSize = True
+        Lector_1Label.Location = New System.Drawing.Point(49, 658)
+        Lector_1Label.Name = "Lector_1Label"
+        Lector_1Label.Size = New System.Drawing.Size(49, 13)
+        Lector_1Label.TabIndex = 58
+        Lector_1Label.Text = "Lector 1:"
+        '
+        'Lector_1TextBox
+        '
+        Me.Lector_1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Lector 1", True))
+        Me.Lector_1TextBox.Location = New System.Drawing.Point(104, 655)
+        Me.Lector_1TextBox.Name = "Lector_1TextBox"
+        Me.Lector_1TextBox.Size = New System.Drawing.Size(152, 20)
+        Me.Lector_1TextBox.TabIndex = 59
+        '
         'Evaluación_de_Defensa_Pública_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(786, 729)
+        Me.Controls.Add(Lector_1Label)
+        Me.Controls.Add(Me.Lector_1TextBox)
+        Me.Controls.Add(Me.Button4)
         Me.Controls.Add(Me.Button3)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.NombreComboBox1)
         Me.Controls.Add(Me.TextBox23)
         Me.Controls.Add(Me.TextBox22)
         Me.Controls.Add(Me.TextBox21)
@@ -709,7 +719,6 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.Controls.Add(Me.TextBox18)
         Me.Controls.Add(Me.Label26)
         Me.Controls.Add(Me.Label25)
-        Me.Controls.Add(Me.Label24)
         Me.Controls.Add(Me.TextBox16)
         Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.TextBox14)
@@ -822,7 +831,6 @@ Partial Class Evaluación_de_Defensa_Pública_1
     Friend WithEvents Label22 As Label
     Friend WithEvents TextBox16 As TextBox
     Friend WithEvents Label23 As Label
-    Friend WithEvents Label24 As Label
     Friend WithEvents Label25 As Label
     Friend WithEvents Label26 As Label
     Friend WithEvents TextBox18 As TextBox
@@ -834,7 +842,8 @@ Partial Class Evaluación_de_Defensa_Pública_1
     Friend WithEvents TextBox23 As TextBox
     Friend WithEvents ProfesoresBindingSource As BindingSource
     Friend WithEvents ProfesoresTableAdapter As _Cal_ProyectosDeGraduaciónDataSetTableAdapters.ProfesoresTableAdapter
-    Friend WithEvents NombreComboBox1 As ComboBox
     Friend WithEvents Button2 As Button
     Friend WithEvents Button3 As Button
+    Friend WithEvents Button4 As Button
+    Friend WithEvents Lector_1TextBox As TextBox
 End Class

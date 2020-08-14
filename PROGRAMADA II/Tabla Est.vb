@@ -16,4 +16,12 @@
         Form1.Show()
         Me.Hide()
     End Sub
+
+    Private Sub EstudiantesDataGridView_CellContentClick(sender As Object, e As DataGridViewCellEventArgs) Handles EstudiantesDataGridView.CellContentClick
+
+    End Sub
+
+    Private Sub EstudiantesBindingSource_CurrentChanged(sender As Object, e As EventArgs) Handles EstudiantesBindingSource.CurrentChanged
+
+    End Sub
 End Class

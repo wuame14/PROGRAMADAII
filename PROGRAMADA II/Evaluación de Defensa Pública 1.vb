@@ -1,8 +1,9 @@
-﻿Public Class Evaluación_de_Defensa_Pública_1
+﻿Imports System.Data
+Imports System.Data.OleDb
+Public Class Evaluación_de_Defensa_Pública_1
+    Dim cadena As New OleDbConnection
+    Dim comando As New OleDbCommand
     Private Sub EstudiantesBindingNavigatorSaveItem_Click(sender As Object, e As EventArgs) Handles EstudiantesBindingNavigatorSaveItem.Click
-        Me.Validate()
-        Me.EstudiantesBindingSource.EndEdit()
-        Me.TableAdapterManager.UpdateAll(Me._Cal_ProyectosDeGraduaciónDataSet)
 
     End Sub
 
@@ -30,5 +31,12 @@
     Private Sub Button3_Click(sender As Object, e As EventArgs) Handles Button3.Click
         Form1.Show()
         Me.Hide()
+    End Sub
+
+    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+        EstudiantesBindingSource.EndEdit()
+        EstudiantesTableAdapter.Update()
+        MsgBox("guardado", MsgBoxStyle.Information, "guardar")
+
     End Sub
 End Class
