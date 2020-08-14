@@ -31,7 +31,6 @@
         TextBox22.Text = Val(TextBox18.Text) + Val(TextBox19.Text) + Val(TextBox20.Text) + Val(TextBox21.Text)
         TextBox23.Text = Val(TextBox22.Text) / 0.4
         Nota_Lector_2TextBox.Text = Val(TextBox23.Text)
-        'Me.EstudiantesTableAdapter.updateStudentScore(Val(TextBox23.Text), )
     End Sub
 
     Private Sub NombreComboBox2_SelectedIndexChanged(sender As Object, e As EventArgs) Handles NombreComboBox2.SelectedIndexChanged
@@ -44,12 +43,17 @@
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles saveBtn.Click
         EstudiantesBindingSource.EndEdit()
-        'EstudiantesTableAdapter.Update()
         TableAdapterManager.UpdateAll(_Cal_ProyectosDeGraduaciónDataSet)
         MsgBox("guardado", MsgBoxStyle.Information, "guardar")
+        Refresh()
+        Tabla_Est.Refresh()
     End Sub
 
     Private Sub Nota_Lector_2TextBox_TextChanged(sender As Object, e As EventArgs) Handles Nota_Lector_2TextBox.TextChanged
+
+    End Sub
+
+    Private Sub Lector_2TextBox_TextChanged(sender As Object, e As EventArgs) Handles Lector_2TextBox.TextChanged
 
     End Sub
 End Class

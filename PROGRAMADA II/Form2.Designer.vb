@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class C_Notas
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class C_Notas
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(C_Notas))
@@ -47,7 +47,7 @@ Partial Class C_Notas
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Promedio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.Nota_Pro = New System.Windows.Forms.DataGridViewTextBoxColumn()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,8 +115,8 @@ Partial Class C_Notas
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(35, 22)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 22)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
         'BindingNavigatorDeleteItem
@@ -155,7 +155,6 @@ Partial Class C_Notas
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
         Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
@@ -210,11 +209,11 @@ Partial Class C_Notas
         '
         Me.EstudiantesDataGridView.AutoGenerateColumns = False
         Me.EstudiantesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
-        Me.EstudiantesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.Promedio})
+        Me.EstudiantesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.Nota_Pro})
         Me.EstudiantesDataGridView.DataSource = Me.EstudiantesBindingSource
-        Me.EstudiantesDataGridView.Location = New System.Drawing.Point(31, 91)
+        Me.EstudiantesDataGridView.Location = New System.Drawing.Point(12, 85)
         Me.EstudiantesDataGridView.Name = "EstudiantesDataGridView"
-        Me.EstudiantesDataGridView.Size = New System.Drawing.Size(563, 220)
+        Me.EstudiantesDataGridView.Size = New System.Drawing.Size(609, 223)
         Me.EstudiantesDataGridView.TabIndex = 3
         '
         'DataGridViewTextBoxColumn1
@@ -235,10 +234,10 @@ Partial Class C_Notas
         Me.DataGridViewTextBoxColumn8.HeaderText = "Nota Lector 2"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
-        'Promedio
+        'Nota_Pro
         '
-        Me.Promedio.HeaderText = "Promedio"
-        Me.Promedio.Name = "Promedio"
+        Me.Nota_Pro.HeaderText = "Nota Promedio"
+        Me.Nota_Pro.Name = "Nota_Pro"
         '
         'C_Notas
         '
@@ -285,5 +284,5 @@ Partial Class C_Notas
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents Promedio As DataGridViewTextBoxColumn
+    Friend WithEvents Nota_Pro As DataGridViewTextBoxColumn
 End Class

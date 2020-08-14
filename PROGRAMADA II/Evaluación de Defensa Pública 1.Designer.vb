@@ -24,8 +24,9 @@ Partial Class Evaluación_de_Defensa_Pública_1
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Dim NombreLabel As System.Windows.Forms.Label
-        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Evaluación_de_Defensa_Pública_1))
         Dim Lector_1Label As System.Windows.Forms.Label
+        Dim Nota_Lector_1Label As System.Windows.Forms.Label
+        Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Evaluación_de_Defensa_Pública_1))
         Me._Cal_ProyectosDeGraduaciónDataSet = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSet()
         Me.EstudiantesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
         Me.EstudiantesTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.EstudiantesTableAdapter()
@@ -98,8 +99,10 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.Button3 = New System.Windows.Forms.Button()
         Me.Button4 = New System.Windows.Forms.Button()
         Me.Lector_1TextBox = New System.Windows.Forms.TextBox()
+        Me.Nota_Lector_1TextBox = New System.Windows.Forms.TextBox()
         NombreLabel = New System.Windows.Forms.Label()
         Lector_1Label = New System.Windows.Forms.Label()
+        Nota_Lector_1Label = New System.Windows.Forms.Label()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -115,6 +118,24 @@ Partial Class Evaluación_de_Defensa_Pública_1
         NombreLabel.Size = New System.Drawing.Size(47, 13)
         NombreLabel.TabIndex = 1
         NombreLabel.Text = "Nombre:"
+        '
+        'Lector_1Label
+        '
+        Lector_1Label.AutoSize = True
+        Lector_1Label.Location = New System.Drawing.Point(49, 658)
+        Lector_1Label.Name = "Lector_1Label"
+        Lector_1Label.Size = New System.Drawing.Size(49, 13)
+        Lector_1Label.TabIndex = 58
+        Lector_1Label.Text = "Lector 1:"
+        '
+        'Nota_Lector_1Label
+        '
+        Nota_Lector_1Label.AutoSize = True
+        Nota_Lector_1Label.Location = New System.Drawing.Point(307, 630)
+        Nota_Lector_1Label.Name = "Nota_Lector_1Label"
+        Nota_Lector_1Label.Size = New System.Drawing.Size(75, 13)
+        Nota_Lector_1Label.TabIndex = 59
+        Nota_Lector_1Label.Text = "Nota Lector 1:"
         '
         '_Cal_ProyectosDeGraduaciónDataSet
         '
@@ -284,21 +305,25 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label2
         '
-        Me.Label2.AutoSize = True
+        Me.Label2.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label2.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.Label2.Location = New System.Drawing.Point(57, 118)
         Me.Label2.Name = "Label2"
-        Me.Label2.Size = New System.Drawing.Size(84, 13)
+        Me.Label2.Size = New System.Drawing.Size(199, 29)
         Me.Label2.TabIndex = 8
-        Me.Label2.Text = "Rubro a Evaluar"
+        Me.Label2.Text = "  Rubro a Evaluar"
+        Me.Label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label3
         '
-        Me.Label3.AutoSize = True
-        Me.Label3.Location = New System.Drawing.Point(288, 118)
+        Me.Label3.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label3.Location = New System.Drawing.Point(253, 118)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(73, 13)
+        Me.Label3.Size = New System.Drawing.Size(152, 29)
         Me.Label3.TabIndex = 9
         Me.Label3.Text = "Característica"
+        Me.Label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label4
         '
@@ -320,63 +345,77 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label6
         '
-        Me.Label6.Location = New System.Drawing.Point(57, 170)
+        Me.Label6.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label6.Location = New System.Drawing.Point(57, 147)
         Me.Label6.Name = "Label6"
-        Me.Label6.Size = New System.Drawing.Size(112, 33)
+        Me.Label6.Size = New System.Drawing.Size(199, 54)
         Me.Label6.TabIndex = 12
-        Me.Label6.Text = "Orden y secuencia de la exposición 5%"
-        Me.Label6.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label6.Text = "Orden y secuencia de la exposición       5%"
+        Me.Label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label7
         '
-        Me.Label7.Location = New System.Drawing.Point(57, 320)
+        Me.Label7.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label7.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label7.Location = New System.Drawing.Point(57, 201)
         Me.Label7.Name = "Label7"
-        Me.Label7.Size = New System.Drawing.Size(117, 37)
+        Me.Label7.Size = New System.Drawing.Size(197, 143)
         Me.Label7.TabIndex = 13
         Me.Label7.Text = "Calidad y contenido del informe escrito 20%"
-        Me.Label7.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label7.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label8
         '
-        Me.Label8.Location = New System.Drawing.Point(67, 468)
+        Me.Label8.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label8.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label8.Location = New System.Drawing.Point(57, 343)
         Me.Label8.Name = "Label8"
-        Me.Label8.Size = New System.Drawing.Size(92, 31)
+        Me.Label8.Size = New System.Drawing.Size(197, 37)
         Me.Label8.TabIndex = 14
         Me.Label8.Text = "Calidad de la exposición 5%"
-        Me.Label8.TextAlign = System.Drawing.ContentAlignment.TopCenter
+        Me.Label8.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label9
         '
-        Me.Label9.Location = New System.Drawing.Point(47, 538)
+        Me.Label9.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label9.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label9.Location = New System.Drawing.Point(57, 380)
         Me.Label9.Name = "Label9"
-        Me.Label9.Size = New System.Drawing.Size(112, 33)
+        Me.Label9.Size = New System.Drawing.Size(197, 18)
         Me.Label9.TabIndex = 15
         Me.Label9.Text = "Calidad de las respuestas 10%"
         Me.Label9.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label10
         '
-        Me.Label10.Location = New System.Drawing.Point(248, 147)
+        Me.Label10.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label10.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label10.Location = New System.Drawing.Point(253, 147)
         Me.Label10.Name = "Label10"
-        Me.Label10.Size = New System.Drawing.Size(157, 18)
+        Me.Label10.Size = New System.Drawing.Size(152, 18)
         Me.Label10.TabIndex = 16
         Me.Label10.Text = "Orden en la exposición"
         Me.Label10.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label11
         '
-        Me.Label11.Location = New System.Drawing.Point(248, 173)
+        Me.Label11.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label11.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label11.Location = New System.Drawing.Point(253, 165)
         Me.Label11.Name = "Label11"
-        Me.Label11.Size = New System.Drawing.Size(157, 18)
+        Me.Label11.Size = New System.Drawing.Size(152, 18)
         Me.Label11.TabIndex = 17
         Me.Label11.Text = "Aprovechamiento del tiempo"
         Me.Label11.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label12
         '
-        Me.Label12.Location = New System.Drawing.Point(248, 200)
+        Me.Label12.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label12.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label12.Location = New System.Drawing.Point(253, 183)
         Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(157, 18)
+        Me.Label12.Size = New System.Drawing.Size(152, 18)
         Me.Label12.TabIndex = 18
         Me.Label12.Text = "Uso de ayudas audiovisuales"
         Me.Label12.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -425,27 +464,33 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label13
         '
-        Me.Label13.Location = New System.Drawing.Point(248, 293)
+        Me.Label13.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label13.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label13.Location = New System.Drawing.Point(253, 237)
         Me.Label13.Name = "Label13"
-        Me.Label13.Size = New System.Drawing.Size(157, 18)
+        Me.Label13.Size = New System.Drawing.Size(152, 18)
         Me.Label13.TabIndex = 24
         Me.Label13.Text = "Marco teórico"
         Me.Label13.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label14
         '
-        Me.Label14.Location = New System.Drawing.Point(248, 266)
+        Me.Label14.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label14.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label14.Location = New System.Drawing.Point(253, 219)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(157, 18)
+        Me.Label14.Size = New System.Drawing.Size(152, 18)
         Me.Label14.TabIndex = 23
         Me.Label14.Text = "Desarrollo de la introducción"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label15
         '
-        Me.Label15.Location = New System.Drawing.Point(248, 240)
+        Me.Label15.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label15.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label15.Location = New System.Drawing.Point(253, 201)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(157, 18)
+        Me.Label15.Size = New System.Drawing.Size(152, 18)
         Me.Label15.TabIndex = 22
         Me.Label15.Text = "Cumplimiento del formato"
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -473,27 +518,33 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label16
         '
-        Me.Label16.Location = New System.Drawing.Point(248, 373)
+        Me.Label16.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label16.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label16.Location = New System.Drawing.Point(253, 290)
         Me.Label16.Name = "Label16"
-        Me.Label16.Size = New System.Drawing.Size(167, 18)
+        Me.Label16.Size = New System.Drawing.Size(152, 18)
         Me.Label16.TabIndex = 30
         Me.Label16.Text = "Propuestas de solución y costos"
         Me.Label16.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label17
         '
-        Me.Label17.Location = New System.Drawing.Point(248, 346)
+        Me.Label17.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label17.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label17.Location = New System.Drawing.Point(253, 273)
         Me.Label17.Name = "Label17"
-        Me.Label17.Size = New System.Drawing.Size(157, 18)
+        Me.Label17.Size = New System.Drawing.Size(152, 18)
         Me.Label17.TabIndex = 29
         Me.Label17.Text = "Análisis de la situación actual"
         Me.Label17.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label18
         '
-        Me.Label18.Location = New System.Drawing.Point(248, 320)
+        Me.Label18.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label18.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label18.Location = New System.Drawing.Point(253, 255)
         Me.Label18.Name = "Label18"
-        Me.Label18.Size = New System.Drawing.Size(157, 18)
+        Me.Label18.Size = New System.Drawing.Size(152, 18)
         Me.Label18.TabIndex = 28
         Me.Label18.Text = "Metodología"
         Me.Label18.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -514,18 +565,22 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label19
         '
-        Me.Label19.Location = New System.Drawing.Point(248, 428)
+        Me.Label19.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label19.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label19.Location = New System.Drawing.Point(253, 326)
         Me.Label19.Name = "Label19"
-        Me.Label19.Size = New System.Drawing.Size(167, 18)
+        Me.Label19.Size = New System.Drawing.Size(152, 18)
         Me.Label19.TabIndex = 35
         Me.Label19.Text = "Conclusiones y recomendaciones"
         Me.Label19.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label20
         '
-        Me.Label20.Location = New System.Drawing.Point(248, 401)
+        Me.Label20.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label20.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label20.Location = New System.Drawing.Point(253, 308)
         Me.Label20.Name = "Label20"
-        Me.Label20.Size = New System.Drawing.Size(157, 18)
+        Me.Label20.Size = New System.Drawing.Size(152, 18)
         Me.Label20.TabIndex = 34
         Me.Label20.Text = "Implementación (plan)"
         Me.Label20.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -546,18 +601,22 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label21
         '
-        Me.Label21.Location = New System.Drawing.Point(248, 494)
+        Me.Label21.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label21.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label21.Location = New System.Drawing.Point(253, 362)
         Me.Label21.Name = "Label21"
-        Me.Label21.Size = New System.Drawing.Size(157, 18)
+        Me.Label21.Size = New System.Drawing.Size(152, 18)
         Me.Label21.TabIndex = 39
         Me.Label21.Text = "Dominio del tema"
         Me.Label21.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label22
         '
-        Me.Label22.Location = New System.Drawing.Point(248, 468)
+        Me.Label22.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label22.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label22.Location = New System.Drawing.Point(253, 344)
         Me.Label22.Name = "Label22"
-        Me.Label22.Size = New System.Drawing.Size(157, 18)
+        Me.Label22.Size = New System.Drawing.Size(152, 18)
         Me.Label22.TabIndex = 38
         Me.Label22.Text = "Claridad en la exposición"
         Me.Label22.TextAlign = System.Drawing.ContentAlignment.TopCenter
@@ -571,11 +630,13 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Label23
         '
-        Me.Label23.Location = New System.Drawing.Point(248, 538)
+        Me.Label23.BackColor = System.Drawing.SystemColors.ActiveCaption
+        Me.Label23.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
+        Me.Label23.Location = New System.Drawing.Point(253, 380)
         Me.Label23.Name = "Label23"
-        Me.Label23.Size = New System.Drawing.Size(157, 18)
+        Me.Label23.Size = New System.Drawing.Size(152, 18)
         Me.Label23.TabIndex = 42
-        Me.Label23.Text = "Dominio del tema"
+        Me.Label23.Text = "Claridad de las espuestas"
         Me.Label23.TextAlign = System.Drawing.ContentAlignment.TopCenter
         '
         'Label25
@@ -658,16 +719,16 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(413, 655)
+        Me.Button2.Location = New System.Drawing.Point(413, 682)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(145, 46)
+        Me.Button2.Size = New System.Drawing.Size(114, 27)
         Me.Button2.TabIndex = 56
         Me.Button2.Text = "PDF"
         Me.Button2.UseVisualStyleBackColor = True
         '
         'Button3
         '
-        Me.Button3.Location = New System.Drawing.Point(602, 667)
+        Me.Button3.Location = New System.Drawing.Point(539, 668)
         Me.Button3.Name = "Button3"
         Me.Button3.Size = New System.Drawing.Size(132, 23)
         Me.Button3.TabIndex = 57
@@ -676,21 +737,12 @@ Partial Class Evaluación_de_Defensa_Pública_1
         '
         'Button4
         '
-        Me.Button4.Location = New System.Drawing.Point(618, 367)
+        Me.Button4.Location = New System.Drawing.Point(413, 653)
         Me.Button4.Name = "Button4"
-        Me.Button4.Size = New System.Drawing.Size(75, 23)
+        Me.Button4.Size = New System.Drawing.Size(114, 23)
         Me.Button4.TabIndex = 58
-        Me.Button4.Text = "Button4"
+        Me.Button4.Text = "Guardar datos"
         Me.Button4.UseVisualStyleBackColor = True
-        '
-        'Lector_1Label
-        '
-        Lector_1Label.AutoSize = True
-        Lector_1Label.Location = New System.Drawing.Point(49, 658)
-        Lector_1Label.Name = "Lector_1Label"
-        Lector_1Label.Size = New System.Drawing.Size(49, 13)
-        Lector_1Label.TabIndex = 58
-        Lector_1Label.Text = "Lector 1:"
         '
         'Lector_1TextBox
         '
@@ -700,11 +752,21 @@ Partial Class Evaluación_de_Defensa_Pública_1
         Me.Lector_1TextBox.Size = New System.Drawing.Size(152, 20)
         Me.Lector_1TextBox.TabIndex = 59
         '
+        'Nota_Lector_1TextBox
+        '
+        Me.Nota_Lector_1TextBox.DataBindings.Add(New System.Windows.Forms.Binding("Text", Me.EstudiantesBindingSource, "Nota Lector 1", True))
+        Me.Nota_Lector_1TextBox.Location = New System.Drawing.Point(388, 627)
+        Me.Nota_Lector_1TextBox.Name = "Nota_Lector_1TextBox"
+        Me.Nota_Lector_1TextBox.Size = New System.Drawing.Size(100, 20)
+        Me.Nota_Lector_1TextBox.TabIndex = 60
+        '
         'Evaluación_de_Defensa_Pública_1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(786, 729)
+        Me.Controls.Add(Nota_Lector_1Label)
+        Me.Controls.Add(Me.Nota_Lector_1TextBox)
         Me.Controls.Add(Lector_1Label)
         Me.Controls.Add(Me.Lector_1TextBox)
         Me.Controls.Add(Me.Button4)
@@ -846,4 +908,5 @@ Partial Class Evaluación_de_Defensa_Pública_1
     Friend WithEvents Button3 As Button
     Friend WithEvents Button4 As Button
     Friend WithEvents Lector_1TextBox As TextBox
+    Friend WithEvents Nota_Lector_1TextBox As TextBox
 End Class

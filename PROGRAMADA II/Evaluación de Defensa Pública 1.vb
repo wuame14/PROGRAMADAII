@@ -22,6 +22,8 @@ Public Class Evaluación_de_Defensa_Pública_1
         TextBox21.Text = Val(TextBox16.Text) * 0.1
         TextBox22.Text = Val(TextBox18.Text) + Val(TextBox19.Text) + Val(TextBox20.Text) + Val(TextBox21.Text)
         TextBox23.Text = Val(TextBox22.Text) / 0.4
+        Nota_Lector_1TextBox.Text = Val(TextBox23.Text)
+
     End Sub
 
     Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
@@ -35,9 +37,21 @@ Public Class Evaluación_de_Defensa_Pública_1
 
     Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
         EstudiantesBindingSource.EndEdit()
-        'EstudiantesTableAdapter.Update()
         TableAdapterManager.UpdateAll(_Cal_ProyectosDeGraduaciónDataSet)
         MsgBox("guardado", MsgBoxStyle.Information, "guardar")
+        Tabla_Est.Refresh()
+        Refresh()
+    End Sub
+
+    Private Sub Lector_1TextBox_TextChanged(sender As Object, e As EventArgs) Handles Lector_1TextBox.TextChanged
+
+    End Sub
+
+    Private Sub Label2_Click(sender As Object, e As EventArgs) Handles Label2.Click
+
+    End Sub
+
+    Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
 
     End Sub
 End Class

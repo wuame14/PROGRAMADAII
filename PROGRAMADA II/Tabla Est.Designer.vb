@@ -42,6 +42,7 @@ Partial Class Tabla_Est
         Me.BindingNavigatorSeparator2 = New System.Windows.Forms.ToolStripSeparator()
         Me.EstudiantesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.EstudiantesDataGridView = New System.Windows.Forms.DataGridView()
+        Me.Button1 = New System.Windows.Forms.Button()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn2 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn3 = New System.Windows.Forms.DataGridViewTextBoxColumn()
@@ -50,7 +51,6 @@ Partial Class Tabla_Est
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn7 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
-        Me.Button1 = New System.Windows.Forms.Button()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -198,8 +198,17 @@ Partial Class Tabla_Est
         Me.EstudiantesDataGridView.DataSource = Me.EstudiantesBindingSource
         Me.EstudiantesDataGridView.Location = New System.Drawing.Point(12, 44)
         Me.EstudiantesDataGridView.Name = "EstudiantesDataGridView"
-        Me.EstudiantesDataGridView.Size = New System.Drawing.Size(841, 279)
+        Me.EstudiantesDataGridView.Size = New System.Drawing.Size(972, 279)
         Me.EstudiantesDataGridView.TabIndex = 1
+        '
+        'Button1
+        '
+        Me.Button1.Location = New System.Drawing.Point(133, 329)
+        Me.Button1.Name = "Button1"
+        Me.Button1.Size = New System.Drawing.Size(121, 23)
+        Me.Button1.TabIndex = 3
+        Me.Button1.Text = "Regresar al Menú"
+        Me.Button1.UseVisualStyleBackColor = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -249,15 +258,6 @@ Partial Class Tabla_Est
         Me.DataGridViewTextBoxColumn8.HeaderText = "Nota Lector 2"
         Me.DataGridViewTextBoxColumn8.Name = "DataGridViewTextBoxColumn8"
         '
-        'Button1
-        '
-        Me.Button1.Location = New System.Drawing.Point(133, 329)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(121, 23)
-        Me.Button1.TabIndex = 3
-        Me.Button1.Text = "Regresar al Menú"
-        Me.Button1.UseVisualStyleBackColor = True
-        '
         'Tabla_Est
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
@@ -297,6 +297,7 @@ Partial Class Tabla_Est
     Friend WithEvents BindingNavigatorSeparator2 As ToolStripSeparator
     Friend WithEvents EstudiantesBindingNavigatorSaveItem As ToolStripButton
     Friend WithEvents EstudiantesDataGridView As DataGridView
+    Friend WithEvents Button1 As Button
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn2 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn3 As DataGridViewTextBoxColumn
@@ -305,5 +306,4 @@ Partial Class Tabla_Est
     Friend WithEvents DataGridViewTextBoxColumn6 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn7 As DataGridViewTextBoxColumn
     Friend WithEvents DataGridViewTextBoxColumn8 As DataGridViewTextBoxColumn
-    Friend WithEvents Button1 As Button
 End Class

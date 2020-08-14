@@ -132,6 +132,7 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="sum.vb" />
     <Compile Include="Tabla Est.Designer.vb">
       <DependentUpon>Tabla Est.vb</DependentUpon>
     </Compile>
