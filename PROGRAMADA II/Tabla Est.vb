@@ -24,4 +24,10 @@
     Private Sub EstudiantesBindingSource_CurrentChanged(sender As Object, e As EventArgs) Handles EstudiantesBindingSource.CurrentChanged
 
     End Sub
+
+    Private Sub Button2_Click(sender As Object, e As EventArgs) Handles Button2.Click
+        EstudiantesTableAdapter.Fill(_Cal_ProyectosDeGraduaciónDataSet.Estudiantes)
+        ActiveForm.Refresh()
+
+    End Sub
 End Class

@@ -44,12 +44,12 @@ Partial Class C_Notas
         Me.EstudiantesBindingNavigatorSaveItem = New System.Windows.Forms.ToolStripButton()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.EstudiantesDataGridView = New System.Windows.Forms.DataGridView()
-        Me.NotaPromedioEstudiantesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
-        Me.NotaPromedioEstudiantesTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.NotaPromedioEstudiantesTableAdapter()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn6 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.DataGridViewTextBoxColumn8 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.NotaPromedio = New System.Windows.Forms.DataGridViewTextBoxColumn()
+        Me.NotaPromedioEstudiantesBindingSource = New System.Windows.Forms.BindingSource(Me.components)
+        Me.NotaPromedioEstudiantesTableAdapter = New PROGRAMADA_II._Cal_ProyectosDeGraduaciónDataSetTableAdapters.NotaPromedioEstudiantesTableAdapter()
         Me.RefreshData = New System.Windows.Forms.Button()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.EstudiantesBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -61,10 +61,9 @@ Partial Class C_Notas
         '
         'Button1
         '
-        Me.Button1.Location = New System.Drawing.Point(1672, 489)
-        Me.Button1.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.Button1.Location = New System.Drawing.Point(627, 205)
         Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(397, 72)
+        Me.Button1.Size = New System.Drawing.Size(149, 30)
         Me.Button1.TabIndex = 0
         Me.Button1.Text = "Regresar al Menú"
         Me.Button1.UseVisualStyleBackColor = True
@@ -104,9 +103,9 @@ Partial Class C_Notas
         Me.EstudiantesBindingNavigator.MoveNextItem = Me.BindingNavigatorMoveNextItem
         Me.EstudiantesBindingNavigator.MovePreviousItem = Me.BindingNavigatorMovePreviousItem
         Me.EstudiantesBindingNavigator.Name = "EstudiantesBindingNavigator"
-        Me.EstudiantesBindingNavigator.Padding = New System.Windows.Forms.Padding(0, 0, 5, 0)
+        Me.EstudiantesBindingNavigator.Padding = New System.Windows.Forms.Padding(0, 0, 2, 0)
         Me.EstudiantesBindingNavigator.PositionItem = Me.BindingNavigatorPositionItem
-        Me.EstudiantesBindingNavigator.Size = New System.Drawing.Size(2133, 51)
+        Me.EstudiantesBindingNavigator.Size = New System.Drawing.Size(874, 47)
         Me.EstudiantesBindingNavigator.TabIndex = 1
         Me.EstudiantesBindingNavigator.Text = "BindingNavigator1"
         '
@@ -116,14 +115,14 @@ Partial Class C_Notas
         Me.BindingNavigatorAddNewItem.Image = CType(resources.GetObject("BindingNavigatorAddNewItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorAddNewItem.Name = "BindingNavigatorAddNewItem"
         Me.BindingNavigatorAddNewItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(58, 44)
+        Me.BindingNavigatorAddNewItem.Size = New System.Drawing.Size(44, 44)
         Me.BindingNavigatorAddNewItem.Text = "Add new"
         '
         'BindingNavigatorCountItem
         '
         Me.BindingNavigatorCountItem.Name = "BindingNavigatorCountItem"
-        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(87, 44)
-        Me.BindingNavigatorCountItem.Text = "of {0}"
+        Me.BindingNavigatorCountItem.Size = New System.Drawing.Size(37, 44)
+        Me.BindingNavigatorCountItem.Text = "de {0}"
         Me.BindingNavigatorCountItem.ToolTipText = "Total number of items"
         '
         'BindingNavigatorDeleteItem
@@ -132,7 +131,7 @@ Partial Class C_Notas
         Me.BindingNavigatorDeleteItem.Image = CType(resources.GetObject("BindingNavigatorDeleteItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorDeleteItem.Name = "BindingNavigatorDeleteItem"
         Me.BindingNavigatorDeleteItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(58, 44)
+        Me.BindingNavigatorDeleteItem.Size = New System.Drawing.Size(44, 44)
         Me.BindingNavigatorDeleteItem.Text = "Delete"
         '
         'BindingNavigatorMoveFirstItem
@@ -141,7 +140,7 @@ Partial Class C_Notas
         Me.BindingNavigatorMoveFirstItem.Image = CType(resources.GetObject("BindingNavigatorMoveFirstItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveFirstItem.Name = "BindingNavigatorMoveFirstItem"
         Me.BindingNavigatorMoveFirstItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(58, 44)
+        Me.BindingNavigatorMoveFirstItem.Size = New System.Drawing.Size(44, 44)
         Me.BindingNavigatorMoveFirstItem.Text = "Move first"
         '
         'BindingNavigatorMovePreviousItem
@@ -150,28 +149,27 @@ Partial Class C_Notas
         Me.BindingNavigatorMovePreviousItem.Image = CType(resources.GetObject("BindingNavigatorMovePreviousItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMovePreviousItem.Name = "BindingNavigatorMovePreviousItem"
         Me.BindingNavigatorMovePreviousItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(58, 44)
+        Me.BindingNavigatorMovePreviousItem.Size = New System.Drawing.Size(44, 44)
         Me.BindingNavigatorMovePreviousItem.Text = "Move previous"
         '
         'BindingNavigatorSeparator
         '
         Me.BindingNavigatorSeparator.Name = "BindingNavigatorSeparator"
-        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 51)
+        Me.BindingNavigatorSeparator.Size = New System.Drawing.Size(6, 47)
         '
         'BindingNavigatorPositionItem
         '
         Me.BindingNavigatorPositionItem.AccessibleName = "Position"
         Me.BindingNavigatorPositionItem.AutoSize = False
-        Me.BindingNavigatorPositionItem.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.BindingNavigatorPositionItem.Name = "BindingNavigatorPositionItem"
-        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(127, 47)
+        Me.BindingNavigatorPositionItem.Size = New System.Drawing.Size(50, 23)
         Me.BindingNavigatorPositionItem.Text = "0"
         Me.BindingNavigatorPositionItem.ToolTipText = "Current position"
         '
         'BindingNavigatorSeparator1
         '
         Me.BindingNavigatorSeparator1.Name = "BindingNavigatorSeparator1"
-        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 51)
+        Me.BindingNavigatorSeparator1.Size = New System.Drawing.Size(6, 47)
         '
         'BindingNavigatorMoveNextItem
         '
@@ -179,7 +177,7 @@ Partial Class C_Notas
         Me.BindingNavigatorMoveNextItem.Image = CType(resources.GetObject("BindingNavigatorMoveNextItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveNextItem.Name = "BindingNavigatorMoveNextItem"
         Me.BindingNavigatorMoveNextItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(58, 44)
+        Me.BindingNavigatorMoveNextItem.Size = New System.Drawing.Size(44, 44)
         Me.BindingNavigatorMoveNextItem.Text = "Move next"
         '
         'BindingNavigatorMoveLastItem
@@ -188,28 +186,27 @@ Partial Class C_Notas
         Me.BindingNavigatorMoveLastItem.Image = CType(resources.GetObject("BindingNavigatorMoveLastItem.Image"), System.Drawing.Image)
         Me.BindingNavigatorMoveLastItem.Name = "BindingNavigatorMoveLastItem"
         Me.BindingNavigatorMoveLastItem.RightToLeftAutoMirrorImage = True
-        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(58, 44)
+        Me.BindingNavigatorMoveLastItem.Size = New System.Drawing.Size(44, 44)
         Me.BindingNavigatorMoveLastItem.Text = "Move last"
         '
         'BindingNavigatorSeparator2
         '
         Me.BindingNavigatorSeparator2.Name = "BindingNavigatorSeparator2"
-        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 51)
+        Me.BindingNavigatorSeparator2.Size = New System.Drawing.Size(6, 47)
         '
         'EstudiantesBindingNavigatorSaveItem
         '
         Me.EstudiantesBindingNavigatorSaveItem.DisplayStyle = System.Windows.Forms.ToolStripItemDisplayStyle.Image
         Me.EstudiantesBindingNavigatorSaveItem.Image = CType(resources.GetObject("EstudiantesBindingNavigatorSaveItem.Image"), System.Drawing.Image)
         Me.EstudiantesBindingNavigatorSaveItem.Name = "EstudiantesBindingNavigatorSaveItem"
-        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(58, 44)
+        Me.EstudiantesBindingNavigatorSaveItem.Size = New System.Drawing.Size(44, 44)
         Me.EstudiantesBindingNavigatorSaveItem.Text = "Save Data"
         '
         'Button2
         '
-        Me.Button2.Location = New System.Drawing.Point(1699, 217)
-        Me.Button2.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.Button2.Location = New System.Drawing.Point(637, 91)
         Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(344, 141)
+        Me.Button2.Size = New System.Drawing.Size(129, 59)
         Me.Button2.TabIndex = 3
         Me.Button2.Text = "Generar PDF"
         Me.Button2.UseVisualStyleBackColor = True
@@ -220,21 +217,11 @@ Partial Class C_Notas
         Me.EstudiantesDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize
         Me.EstudiantesDataGridView.Columns.AddRange(New System.Windows.Forms.DataGridViewColumn() {Me.DataGridViewTextBoxColumn1, Me.DataGridViewTextBoxColumn6, Me.DataGridViewTextBoxColumn8, Me.NotaPromedio})
         Me.EstudiantesDataGridView.DataSource = Me.NotaPromedioEstudiantesBindingSource
-        Me.EstudiantesDataGridView.Location = New System.Drawing.Point(32, 203)
-        Me.EstudiantesDataGridView.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
+        Me.EstudiantesDataGridView.Location = New System.Drawing.Point(12, 85)
         Me.EstudiantesDataGridView.Name = "EstudiantesDataGridView"
         Me.EstudiantesDataGridView.RowHeadersWidth = 102
-        Me.EstudiantesDataGridView.Size = New System.Drawing.Size(1624, 532)
+        Me.EstudiantesDataGridView.Size = New System.Drawing.Size(609, 223)
         Me.EstudiantesDataGridView.TabIndex = 3
-        '
-        'NotaPromedioEstudiantesBindingSource
-        '
-        Me.NotaPromedioEstudiantesBindingSource.DataMember = "NotaPromedioEstudiantes"
-        Me.NotaPromedioEstudiantesBindingSource.DataSource = Me._Cal_ProyectosDeGraduaciónDataSet
-        '
-        'NotaPromedioEstudiantesTableAdapter
-        '
-        Me.NotaPromedioEstudiantesTableAdapter.ClearBeforeFill = True
         '
         'DataGridViewTextBoxColumn1
         '
@@ -272,26 +259,35 @@ Partial Class C_Notas
         Me.NotaPromedio.ReadOnly = True
         Me.NotaPromedio.Width = 250
         '
+        'NotaPromedioEstudiantesBindingSource
+        '
+        Me.NotaPromedioEstudiantesBindingSource.DataMember = "NotaPromedioEstudiantes"
+        Me.NotaPromedioEstudiantesBindingSource.DataSource = Me._Cal_ProyectosDeGraduaciónDataSet
+        '
+        'NotaPromedioEstudiantesTableAdapter
+        '
+        Me.NotaPromedioEstudiantesTableAdapter.ClearBeforeFill = True
+        '
         'RefreshData
         '
-        Me.RefreshData.Location = New System.Drawing.Point(1672, 607)
+        Me.RefreshData.Location = New System.Drawing.Point(627, 255)
+        Me.RefreshData.Margin = New System.Windows.Forms.Padding(1, 1, 1, 1)
         Me.RefreshData.Name = "RefreshData"
-        Me.RefreshData.Size = New System.Drawing.Size(397, 81)
+        Me.RefreshData.Size = New System.Drawing.Size(149, 34)
         Me.RefreshData.TabIndex = 4
         Me.RefreshData.Text = "Actualizar datos"
         Me.RefreshData.UseVisualStyleBackColor = True
         '
         'C_Notas
         '
-        Me.AutoScaleDimensions = New System.Drawing.SizeF(16.0!, 31.0!)
+        Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(2133, 1073)
+        Me.ClientSize = New System.Drawing.Size(874, 406)
         Me.Controls.Add(Me.RefreshData)
         Me.Controls.Add(Me.EstudiantesDataGridView)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.EstudiantesBindingNavigator)
         Me.Controls.Add(Me.Button1)
-        Me.Margin = New System.Windows.Forms.Padding(8, 7, 8, 7)
         Me.Name = "C_Notas"
         Me.Text = "C_Notas"
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).EndInit()
