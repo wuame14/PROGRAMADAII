@@ -40,7 +40,7 @@ Public Class Evaluación_de_Defensa_Pública_1
         TableAdapterManager.UpdateAll(_Cal_ProyectosDeGraduaciónDataSet)
         MsgBox("guardado", MsgBoxStyle.Information, "guardar")
         Tabla_Est.Refresh()
-        Refresh()
+        Me.Refresh()
     End Sub
 
     Private Sub Lector_1TextBox_TextChanged(sender As Object, e As EventArgs) Handles Lector_1TextBox.TextChanged
@@ -52,6 +52,18 @@ Public Class Evaluación_de_Defensa_Pública_1
     End Sub
 
     Private Sub Label11_Click(sender As Object, e As EventArgs) Handles Label11.Click
+
+    End Sub
+
+    Private Sub Label8_Click(sender As Object, e As EventArgs) Handles Label8.Click
+
+    End Sub
+
+    Private Sub TextBox23_TextChanged(sender As Object, e As EventArgs) Handles TextBox23.TextChanged
+
+    End Sub
+
+    Private Sub Nota_Lector_1TextBox_TextChanged(sender As Object, e As EventArgs) Handles Nota_Lector_1TextBox.TextChanged
 
     End Sub
 End Class

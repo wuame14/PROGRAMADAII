@@ -50,7 +50,7 @@ Public Class F_Profesores
         Me.ProfesoresBindingSource.MoveNext()
     End Sub
 
-    Private Sub Button4_Click(sender As Object, e As EventArgs) Handles Button4.Click
+    Private Sub Button4_Click(sender As Object, e As EventArgs)
         Me.ProfesoresBindingSource.RemoveCurrent()
         ProfesoresTableAdapter.Update(_Cal_ProyectosDeGraduaciónDataSet)
 
