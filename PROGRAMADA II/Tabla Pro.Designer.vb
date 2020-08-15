@@ -44,6 +44,7 @@ Partial Class Tabla_Pro
         Me.ProfesoresDataGridView = New System.Windows.Forms.DataGridView()
         Me.DataGridViewTextBoxColumn1 = New System.Windows.Forms.DataGridViewTextBoxColumn()
         Me.Button1 = New System.Windows.Forms.Button()
+        Me.Button2 = New System.Windows.Forms.Button()
         CType(Me._Cal_ProyectosDeGraduaciónDataSet, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProfesoresBindingSource, System.ComponentModel.ISupportInitialize).BeginInit()
         CType(Me.ProfesoresBindingNavigator, System.ComponentModel.ISupportInitialize).BeginInit()
@@ -209,11 +210,21 @@ Partial Class Tabla_Pro
         Me.Button1.Text = "Regresar al Menú"
         Me.Button1.UseVisualStyleBackColor = True
         '
+        'Button2
+        '
+        Me.Button2.Location = New System.Drawing.Point(181, 329)
+        Me.Button2.Name = "Button2"
+        Me.Button2.Size = New System.Drawing.Size(121, 23)
+        Me.Button2.TabIndex = 5
+        Me.Button2.Text = "Actualizar Datos"
+        Me.Button2.UseVisualStyleBackColor = True
+        '
         'Tabla_Pro
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(800, 450)
+        Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.ProfesoresDataGridView)
         Me.Controls.Add(Me.ProfesoresBindingNavigator)
@@ -250,4 +261,5 @@ Partial Class Tabla_Pro
     Friend WithEvents ProfesoresDataGridView As DataGridView
     Friend WithEvents DataGridViewTextBoxColumn1 As DataGridViewTextBoxColumn
     Friend WithEvents Button1 As Button
+    Friend WithEvents Button2 As Button
 End Class
