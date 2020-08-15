@@ -45,7 +45,7 @@
         EstudiantesBindingSource.EndEdit()
         TableAdapterManager.UpdateAll(_Cal_ProyectosDeGraduaciónDataSet)
         MsgBox("guardado", MsgBoxStyle.Information, "guardar")
-        Refresh()
+        Me.Refresh()
         Tabla_Est.Refresh()
     End Sub
 
